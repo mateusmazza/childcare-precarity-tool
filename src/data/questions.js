@@ -39,6 +39,19 @@ export const MATCH_5 = [
   { value: 5, label: 'Perfectly' },
 ]
 
+export const GAD_PHQ = [
+  { value: 0, label: 'Not at all' },
+  { value: 1, label: 'Several days' },
+  { value: 2, label: 'More than half the days' },
+  { value: 3, label: 'Nearly every day' },
+]
+
+export const CBCL = [
+  { value: 0, label: 'Not true' },
+  { value: 1, label: 'Somewhat/Sometimes true' },
+  { value: 2, label: 'Often true/Very true' },
+]
+
 // ── DEMOGRAPHICS ──────────────────────────────────────────────────────────────
 
 export const demographicsQuestions = [
@@ -263,17 +276,12 @@ export const affordabilityQuestions = [
   },
   {
     id: 'income_percent_childcare',
-    label: 'Roughly what percentage of your household income goes toward childcare?',
-    type: 'dropdown',
+    label: 'Roughly what percentage of your household income goes toward childcare? If you are not sure, an approximation is fine.',
+    type: 'number',
     required: false,
-    options: [
-      { value: 'under_5', label: 'Less than 5%' },
-      { value: '5_10', label: '5–10%' },
-      { value: '10_20', label: '10–20%' },
-      { value: '20_30', label: '20–30%' },
-      { value: 'over_30', label: 'More than 30%' },
-      { value: 'not_sure', label: 'Not sure' },
-    ],
+    placeholder: 'Example: 10',
+    min: 0,
+    max: 100,
   },
   {
     id: 'subsidy_receipt',
@@ -300,18 +308,6 @@ export const affordabilityQuestions = [
     ],
     conditional: { id: 'subsidy_receipt', value: 'yes' },
   },
-  {
-    id: 'cost_barrier',
-    label: 'Has cost ever prevented you from using your preferred childcare arrangement?',
-    type: 'single',
-    required: false,
-    options: [
-      { value: 'never', label: 'Never' },
-      { value: 'sometimes', label: 'Sometimes' },
-      { value: 'often', label: 'Often' },
-      { value: 'always', label: 'Always — cost is a major barrier' },
-    ],
-  },
 ]
 
 // ── ACCESS & PRECARITY: REASONABLE EFFORT ─────────────────────────────────────
@@ -319,16 +315,12 @@ export const affordabilityQuestions = [
 export const reasonableEffortQuestions = [
   {
     id: 'commute_to_provider',
-    label: 'How long does it take to travel to your main childcare provider (one way)?',
-    type: 'single',
+    label: 'Roughly, how long does it take to travel to your main childcare provider in minutes (one way)?',
+    type: 'number',
     required: false,
-    options: [
-      { value: 'under_5', label: 'Less than 5 minutes' },
-      { value: '5_15', label: '5–15 minutes' },
-      { value: '15_30', label: '15–30 minutes' },
-      { value: '30_60', label: '30–60 minutes' },
-      { value: 'over_60', label: 'More than 60 minutes' },
-    ],
+    placeholder: 'Example: 15',
+    min: 0,
+    max: 180,
   },
   {
     id: 'transportation_mode',
@@ -347,14 +339,14 @@ export const reasonableEffortQuestions = [
   },
   {
     id: 'difficulty_finding',
-    label: 'How difficult was it to find your current childcare arrangement?',
+    label: 'Have you had any difficulty finding space in a home- or center-based child care program?',
     type: 'scale',
     required: false,
     options: DIFFICULTY_5,
   },
   {
     id: 'search_duration',
-    label: 'How long did you search before finding your current childcare?',
+    label: 'How long did you search before finding your current main childcare arrangement?',
     type: 'single',
     required: false,
     options: [
@@ -367,15 +359,15 @@ export const reasonableEffortQuestions = [
     ],
   },
   {
-    id: 'waitlist_difficulty',
-    label: 'How difficult is it to get off a childcare waitlist in your area?',
-    type: 'scale',
+    id: 'search_current',
+    label: 'Are you currently looking for child care, either additional/other child care than your current situation or because you do not currently have care?',
+    type: 'single',
     required: false,
     options: [
-      { value: 0, label: 'Not applicable' },
-      ...DIFFICULTY_5,
+      { value: 'yes', label: 'Yes' },
+      { value: 'no', label: 'No than 1 month' }
     ],
-  },
+  }
 ]
 
 // ── ACCESS & PRECARITY: SUPPORTS CHILD DEVELOPMENT (per provider) ──────────────
@@ -469,24 +461,15 @@ export const meetsNeedsQuestions = [
     options: MATCH_5,
   },
   {
-    id: 'overall_reliability',
-    label: 'Overall, how reliable is your current childcare arrangement?',
-    type: 'scale',
+    id: 'work_impact',
+    label: 'Have recent difficulties with childcare impacted your ability to work?',
+     type: 'single',
     required: false,
     options: [
-      { value: 1, label: 'Very unreliable' },
-      { value: 2, label: 'Somewhat unreliable' },
-      { value: 3, label: 'Neutral' },
-      { value: 4, label: 'Somewhat reliable' },
-      { value: 5, label: 'Very reliable' },
+      { value: 'yes', label: 'Yes, fully' },
+      { value: 'partially', label: 'Partially' },
+      { value: 'no', label: 'No' },
     ],
-  },
-  {
-    id: 'unmet_need',
-    label: 'In the past month, how often did you need childcare but couldn\'t access it?',
-    type: 'scale',
-    required: false,
-    options: LIKERT_5,
   },
 ]
 
@@ -495,66 +478,67 @@ export const meetsNeedsQuestions = [
 
 export const parentEmotionalQuestions = [
   {
-    id: 'placeholder_parent_emotional_1',
-    label: '[Placeholder — Parent Emotional Distress] How often have you felt overwhelmed by your responsibilities in the past week?',
-    placeholder: true,
+    id: 'GAD1',
+    label: 'In the last week, how often have you felt nervous, anxious, or on edge?',
+    placeholder: false,
     type: 'scale',
     required: false,
-    options: LIKERT_5,
+    options: GAD_PHQ,
   },
-  {
-    id: 'placeholder_parent_emotional_2',
-    label: '[Placeholder — Parent Emotional Distress] How often have you felt anxious or worried about your childcare situation in the past week?',
-    placeholder: true,
+ {
+    id: 'GAD2',
+    label: 'In the last week, how often were you not able to stop or control worrying?',
+    placeholder: false,
     type: 'scale',
     required: false,
-    options: LIKERT_5,
+    options: GAD_PHQ,
   },
-  {
-    id: 'placeholder_parent_emotional_3',
-    label: '[Placeholder — Parent Emotional Distress] How often have you felt stressed to the point that it affected your daily functioning in the past week?',
-    placeholder: true,
+    {
+    id: 'PHQ1',
+    label: 'In the last week, how often have you felt little interest or pleasure in doing things?',
+    placeholder: false,
     type: 'scale',
     required: false,
-    options: LIKERT_5,
+    options: GAD_PHQ,
+  },
+ {
+    id: 'PHQ2',
+    label: 'In the last week, how often have you felt down, depressed, or hopeless?',
+    placeholder: false,
+    type: 'scale',
+    required: false,
+    options: GAD_PHQ,
   },
   {
-    id: 'placeholder_parent_emotional_4',
-    label: '[Placeholder — Parent Emotional Distress] How often have you felt confident and in control of your situation in the past week?',
-    placeholder: true,
+    id: 'STRESS1',
+    label: 'Stress means a situation in which a person feels tense, restless, nervous or anxious or is unable to sleep at night because his/her mind is troubled all the time. Have you felt this kind of stress in the last week?',
+    placeholder: false,
     type: 'scale',
     required: false,
     options: LIKERT_5,
   },
 ]
 
-// ── PLACEHOLDER: CHILD EMOTIONAL STATE ────────────────────────────────────────
+// ──PLACEHOLDER: CHILD EMOTIONAL STATE ────────────────────────────────────────
 // ⚠ PLACEHOLDER — Replace with validated instrument (e.g., BITSEA)
 
 export const childEmotionalQuestions = [
   {
-    id: 'placeholder_child_emotional_1',
-    label: '[Placeholder — Child Emotional State] In the past week, how often did your child seem upset or distressed?',
+    id: 'internalizing',
+    label: '[ADAPT] Fearful or anxious',
     placeholder: true,
     type: 'scale',
     required: false,
-    options: LIKERT_5,
+    options: CBCL,
   },
   {
-    id: 'placeholder_child_emotional_2',
-    label: '[Placeholder — Child Emotional State] In the past week, how often did your child seem happy and content?',
+    id: 'externalizing',
+    label: '[ADAPT] Fussy or definant',
     placeholder: true,
     type: 'scale',
     required: false,
-    options: LIKERT_5,
-  },
-  {
-    id: 'placeholder_child_emotional_3',
-    label: '[Placeholder — Child Emotional State] In the past week, how often did your child have difficulty separating from you at drop-off?',
-    placeholder: true,
-    type: 'scale',
-    required: false,
-    options: LIKERT_5,
+    options: CBCL,
+
   },
 ]
 
@@ -632,8 +616,8 @@ export const weeklyCheckinQuestions = [
     ],
   },
   {
-    id: 'waitlist_new',
-    label: 'Have you joined any new childcare waitlists this week?',
+    id: 'waitlist_removed',
+    label: 'Did you get off from any waitlists this week, for example, because you got a spot in a preferred childcare option?',
     type: 'single',
     required: false,
     options: [
@@ -641,15 +625,18 @@ export const weeklyCheckinQuestions = [
       { value: 'no', label: 'No' },
     ],
   },
-  {
-    id: 'waitlist_removed',
-    label: 'Have you left or been removed from any waitlists this week (got a spot, stopped waiting, etc.)?',
+   {
+    id: 'waitlist_removed_confounder',
+    label: 'Was your exit of this waitlist caused by any of the following? ',
     type: 'single',
     required: false,
     options: [
-      { value: 'yes', label: 'Yes' },
-      { value: 'no', label: 'No' },
+      { value: 'new_job', label: 'I got a new job.' },
+      { value: 'raise', label: 'I got a raise.' },
+      { value: 'moved', label: 'I moved to a new home.' },
+      { value: 'none', label: 'None of the above, a spot opened for my child.' },
     ],
+    conditional: { id: 'waitlist_removed', value: 'yes' },
   },
   {
     id: 'weekly_disruption',
@@ -662,34 +649,63 @@ export const weeklyCheckinQuestions = [
     ],
   },
   {
-    id: 'placeholder_weekly_parent_emotional_1',
-    label: '[Placeholder — Weekly Parent Emotional] How stressed have you felt about your childcare situation this week?',
-    placeholder: true,
+    id: 'GAD1',
+    label: 'In the last week, how often have you felt nervous, anxious, or on edge?',
+    placeholder: false,
     type: 'scale',
     required: false,
-    options: [
-      { value: 1, label: 'Not at all stressed' },
-      { value: 2, label: 'Slightly stressed' },
-      { value: 3, label: 'Moderately stressed' },
-      { value: 4, label: 'Very stressed' },
-      { value: 5, label: 'Extremely stressed' },
-    ],
+    options: GAD_PHQ,
+  },
+ {
+    id: 'GAD2',
+    label: 'In the last week, how often were you not able to stop or control worrying?',
+    placeholder: false,
+    type: 'scale',
+    required: false,
+    options: GAD_PHQ,
+  },
+    {
+    id: 'PHQ1',
+    label: 'In the last week, how often have you felt little interest or pleasure in doing things?',
+    placeholder: false,
+    type: 'scale',
+    required: false,
+    options: GAD_PHQ,
+  },
+ {
+    id: 'PHQ2',
+    label: 'In the last week, how often have you felt down, depressed, or hopeless?',
+    placeholder: false,
+    type: 'scale',
+    required: false,
+    options: GAD_PHQ,
   },
   {
-    id: 'placeholder_weekly_child_emotional_1',
-    label: '[Placeholder — Weekly Child Emotional] Overall, how has your child seemed this week?',
+    id: 'STRESS1',
+    label: 'Stress means a situation in which a person feels tense, restless, nervous or anxious or is unable to sleep at night because his/her mind is troubled all the time. Have you felt this kind of stress in the last week?',
+    placeholder: false,
+    type: 'scale',
+    required: false,
+    options: LIKERT_5,
+  },
+  {
+    id: 'internalizing',
+    label: '[ADAPT] Fearful or anxious',
     placeholder: true,
     type: 'scale',
     required: false,
-    options: [
-      { value: 1, label: 'Very unhappy / distressed' },
-      { value: 2, label: 'Somewhat unhappy' },
-      { value: 3, label: 'Neutral / mixed' },
-      { value: 4, label: 'Mostly happy' },
-      { value: 5, label: 'Very happy and content' },
-    ],
+    options: CBCL,
+  },
+  {
+    id: 'externalizing',
+    label: '[ADAPT] Fussy or definant',
+    placeholder: true,
+    type: 'scale',
+    required: false,
+    options: CBCL,
   },
 ]
+
 
 // ── PROVIDER COLOR PALETTE ─────────────────────────────────────────────────────
 
