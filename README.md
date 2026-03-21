@@ -1,16 +1,16 @@
-# Childcare Precarity Assessment Tool
+# Caremometer
 
 A free, open-source, longitudinal web application for measuring childcare precarity in research studies.
 
 **Built by:** Mateus Mazzaferro, Stanford Graduate School of Education
-**Live demo:** https://mateusmazza.github.io/childcare-precarity-tool/
+**Live demo:** https://mateusmazza.github.io/caremometer/
 **Stack:** React + Vite + localStorage (Firebase-ready) + GitHub Pages
 
 ---
 
 ## What is childcare precarity?
 
-Childcare precarity is the degree to which a family's childcare arrangements are insecure, unreliable, or misaligned with their needs — especially while parents work or attend school. This tool operationalizes precarity across five dimensions:
+Childcare precarity is the degree to which a family's childcare arrangements are insecure, unreliable, or misaligned with their needs — especially while parents work or attend school. Caremometer operationalizes precarity across five dimensions:
 
 1. **Affordability** — cost burden relative to income, subsidy access
 2. **Reasonable Effort** — geographic burden, difficulty finding care
@@ -28,11 +28,11 @@ Computed longitudinal metrics from the weekly calendar data:
 ## Features
 
 - Entry assessment (~30 min) — demographics, provider roster, all precarity domains, placeholder emotional/cognitive measures
-- Weekly calendar check-in (~5 min) — click-and-drag painting interface for childcare schedules
+- Weekly calendar check-in (~5 min) — tap-and-drag painting interface for childcare schedules
 - Auto-computed metrics — instability, multiplicity, entropy calculated on each submission
 - Researcher dashboard — participant overview, metrics table, one-click CSV export
 - Exit assessment — mirrors entry structure for longitudinal comparison
-- Mobile-friendly — touch support on the calendar, responsive layout
+- **Mobile-first** — full touch support on the calendar, 48px touch targets, iOS auto-zoom prevention, responsive layout
 - No server required — data stored in browser localStorage (Firebase-ready interface)
 
 ---
@@ -40,13 +40,13 @@ Computed longitudinal metrics from the weekly calendar data:
 ## Quickstart (for developers)
 
 ```bash
-git clone https://github.com/mateusmazza/childcare-precarity-tool.git
-cd childcare-precarity-tool
+git clone https://github.com/mateusmazza/caremometer.git
+cd caremometer
 npm install
 npm run dev
 ```
 
-The app runs at `http://localhost:5173/childcare-precarity-tool/`.
+The app runs at `http://localhost:5173/caremometer/`.
 
 ---
 
@@ -58,11 +58,11 @@ Click **Fork** on GitHub to create your own copy.
 
 ### 2. Enable GitHub Pages
 
-In your fork: Settings -> Pages -> Source: select **GitHub Actions**.
+In your fork: Settings → Pages → Source: select **GitHub Actions**.
 
 ### 3. Set the researcher password
 
-In your fork: Settings -> Secrets and variables -> Actions -> New repository secret:
+In your fork: Settings → Secrets and variables → Actions → New repository secret:
 - Name: `VITE_RESEARCHER_PASSWORD`
 - Value: a strong password of your choice
 
@@ -77,7 +77,7 @@ const ALLOWED_EMAILS = ['participant1@example.com', 'participant2@example.com']
 ### 5. Push to `main`
 
 GitHub Actions will automatically build and deploy. Your app will be at:
-`https://YOUR-USERNAME.github.io/childcare-precarity-tool/`
+`https://YOUR-USERNAME.github.io/caremometer/`
 
 ---
 
@@ -104,7 +104,7 @@ No changes to components are needed.
 
 ## Data export
 
-Researchers export data as CSV from the dashboard (`/dashboard`). The CSV includes one row per participant x week x date x hour with all demographics, provider info, and computed metrics.
+Researchers export data as CSV from the dashboard (`/dashboard`). The CSV includes one row per participant × week × date × hour with all demographics, provider info, and computed metrics.
 
 ---
 
@@ -133,4 +133,4 @@ MIT. If you use this tool in research, a citation or acknowledgment is appreciat
 
 ## Citation
 
-> Mazzaferro, M. (2025). Childcare Precarity Assessment Tool [Software]. Stanford Graduate School of Education. https://github.com/mateusmazza/childcare-precarity-tool
+> Mazzaferro, M. (2025). Caremometer [Software]. Stanford Graduate School of Education. https://github.com/mateusmazza/caremometer

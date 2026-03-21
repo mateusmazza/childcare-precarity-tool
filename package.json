@@ -1,12 +1,12 @@
 {
-  "name": "childcare-precarity-tool",
+  "name": "caremometer",
   "private": true,
   "version": "0.1.0",
-  "description": "Web-based assessment tool for measuring childcare precarity in longitudinal research studies.",
-  "homepage": "https://mateusmazza.github.io/childcare-precarity-tool/",
+  "description": "Caremometer — a free, open-source longitudinal web tool for measuring childcare precarity in research studies.",
+  "homepage": "https://mateusmazza.github.io/caremometer/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mateusmazza/childcare-precarity-tool"
+    "url": "https://github.com/mateusmazza/caremometer"
   },
   "license": "MIT",
   "type": "module",

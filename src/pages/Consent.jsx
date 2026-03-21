@@ -30,7 +30,7 @@ export default function Consent() {
 
       <div className="card" style={{ marginBottom: '1.5rem', lineHeight: 1.75, color: 'var(--gray-700)', fontSize: '.9375rem' }}>
         <h2 style={{ fontSize: '1.0625rem', fontWeight: 700, marginBottom: '1rem' }}>
-          Study Title: Measuring Childcare Precarity
+          Caremometer — Measuring Childcare Precarity
         </h2>
 
         <p style={{ marginBottom: '1rem' }}>

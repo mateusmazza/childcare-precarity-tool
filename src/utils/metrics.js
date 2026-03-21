@@ -1,5 +1,5 @@
 /**
- * Childcare Precarity Metrics Engine
+ * Caremometer — Metrics Engine
  *
  * Implements the three core longitudinal constructs:
  *   1. Multiplicity  — number of distinct providers used in a week

@@ -1,5 +1,5 @@
 /**
- * All survey question definitions for the Childcare Precarity Assessment Tool.
+ * All survey question definitions for Caremometer.
  * Each question has: id, section, type, label, options (if applicable), required.
  *
  * Types: 'single' | 'multi' | 'scale' | 'text' | 'number' | 'dropdown' | 'date'

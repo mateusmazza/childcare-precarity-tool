@@ -9,7 +9,7 @@ export default function Welcome() {
     <div>
       <div className="hero">
         <p className="hero__eyebrow">Stanford Graduate School of Education</p>
-        <h1 className="hero__title">Childcare Precarity Study</h1>
+        <h1 className="hero__title">Caremometer</h1>
         <p className="hero__subtitle">
           Help us understand families' childcare experiences by completing a brief
           enrollment assessment and weekly check-ins about your childcare schedule.

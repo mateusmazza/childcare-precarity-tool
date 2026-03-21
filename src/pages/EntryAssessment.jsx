@@ -64,7 +64,7 @@ function SurveySection({ questions, answers, setAnswers, filterConditional }) {
           key={q.id}
           question={q}
           value={answers[q.id]}
-          onChange={val => setAnswers(prev => ({ ...prev, [q.id]: val }))}
+          onChange={val => setAnswers({ ...answers, [q.id]: val })}
         />
       ))}
     </>

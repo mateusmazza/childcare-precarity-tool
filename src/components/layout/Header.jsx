@@ -17,7 +17,7 @@ export default function Header() {
       <div className="header__inner">
         <a href="#/" className="header__logo" onClick={e => { e.preventDefault(); navigate('/') }}>
           <div className="header__logo-icon">🏠</div>
-          Childcare Precarity Study
+          Caremometer
         </a>
         <nav className="header__nav">
           {participant && !isResearcher && (

@@ -1,9 +1,9 @@
-# Childcare Precarity Assessment Tool — Master To-Do
+# Caremometer — Master To-Do
 
-> **Project**: A free, open-source, longitudinal web-based assessment tool for childcare precarity research.
+> **Project**: Caremometer — a free, open-source, longitudinal web-based tool for measuring childcare precarity in research studies.
 > **PI/Developer**: Mateus (Stanford GSE PhD student)
 > **Stack**: React SPA + Firebase (Spark free tier) + GitHub Pages
-> **Repo**: To be created on GitHub
+> **Repo**: https://github.com/mateusmazza/caremometer
 
 ---
 
@@ -38,14 +38,14 @@ Computed longitudinal metrics (from the calendar data):
 
 ## PHASE 0 — Project Setup & Architecture
 
-- [ ] **0.1** Create a GitHub repository (`childcare-precarity-tool`) with MIT License and README stub
-- [ ] **0.2** Initialize a React project using Vite (fast, modern, zero-config) inside the repo
-- [ ] **0.3** Set up GitHub Pages deployment via GitHub Actions (auto-deploy on push to `main`)
+- [x] **0.1** Create a GitHub repository (`caremometer`) with MIT License and README stub
+- [x] **0.2** Initialize a React project using Vite (fast, modern, zero-config) inside the repo
+- [x] **0.3** Set up GitHub Pages deployment via GitHub Actions (auto-deploy on push to `main`)
 - [ ] **0.4** Create a Firebase project (free Spark plan): enable Authentication (anonymous + email/link), Firestore, and Firebase Hosting as fallback
 - [ ] **0.5** Connect Firebase config to the React app via environment variables (`.env.local`); document in README how to set up your own Firebase project
 - [ ] **0.6** Define Firestore data schema (see Data Model section below)
 - [ ] **0.7** Set up Firestore security rules (participants can only read/write their own data; researchers with admin role can read all)
-- [ ] **0.8** Set up repo structure: `/src/components`, `/src/pages`, `/src/hooks`, `/src/utils`, `/src/firebase`
+- [x] **0.8** Set up repo structure: `/src/components`, `/src/pages`, `/src/hooks`, `/src/utils`, `/src/firebase`
 
 ---
 
@@ -284,9 +284,9 @@ These items are intentionally out of scope for the current build but must be tra
 
 | Milestone | Phases | Status |
 |-----------|--------|--------|
-| M1: Architecture & skeleton app | 0, 1, 2 | Not started |
-| M2: Entry assessment working end-to-end | 3 | Not started |
-| M3: Calendar check-in working end-to-end | 4, 5 | Not started |
-| M4: Exit assessment + researcher dashboard + export | 6, 7 | Not started |
-| M5: Docs, GitHub, open-source release | 8 | Not started |
-| M6: Pilot testing & refinement | 9 | Not started |
+| M1: Architecture & skeleton app | 0, 1, 2 | ✅ Complete |
+| M2: Entry assessment working end-to-end | 3 | ✅ Complete |
+| M3: Calendar check-in working end-to-end | 4, 5 | ✅ Complete |
+| M4: Exit assessment + researcher dashboard + export | 6, 7 | ✅ Complete |
+| M5: Docs, GitHub, open-source release | 8 | ✅ Complete |
+| M6: Pilot testing & refinement | 9 | In progress |

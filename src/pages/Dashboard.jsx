@@ -119,7 +119,7 @@ function DashboardContent() {
       <div className="flex justify-between items-center" style={{ marginBottom: '1.5rem', flexWrap: 'wrap', gap: '.75rem' }}>
         <div>
           <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Researcher Dashboard</h1>
-          <p className="text-muted text-sm">Childcare Precarity Study — Prototype</p>
+          <p className="text-muted text-sm">Caremometer — Prototype</p>
         </div>
         <div className="flex" style={{ gap: '.5rem', flexWrap: 'wrap' }}>
           <button className="btn btn--secondary btn--sm" onClick={handleCopyReminderLink}>
