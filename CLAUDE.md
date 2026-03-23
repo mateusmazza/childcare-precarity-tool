@@ -1,0 +1,1 @@
+I sometimes may have made edits to the context in the folder or worked with other AI tools to make edits. Do not remove any changes you see and do not recognize, I am working on it separately as well. 

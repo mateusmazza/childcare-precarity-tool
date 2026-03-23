@@ -47,8 +47,8 @@ const STEPS = [
 function newProvider(index) {
   return {
     id:    `prov_${Date.now()}_${index}`,
-    name:  '',
-    type:  '',
+    name:  index === 0 ? 'Myself' : '',
+    type:  index === 0 ? 'parent_self' : '',
     color: PROVIDER_COLORS[index % PROVIDER_COLORS.length],
   }
 }
