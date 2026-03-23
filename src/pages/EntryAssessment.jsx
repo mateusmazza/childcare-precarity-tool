@@ -41,7 +41,7 @@ const STEPS = [
   'Child Well-being',
   'Parent Cognition',
   'Child Cognition',
-  'Review & Submit',
+  'Submit',
 ]
 
 function newProvider(index) {
@@ -412,52 +412,11 @@ export default function EntryAssessment() {
           </div>
         )}
 
-        {/* Step 10: Review & Submit */}
+        {/* Step 10: Submit */}
         {step === 10 && (
           <div>
             <div className="alert alert--success">
-              You've completed all sections. Review your answers below, then click Submit.
-            </div>
-
-            <div className="card">
-              <h3 className="section__title">Your providers</h3>
-              {validProviders.length === 0 ? (
-                <p className="text-sm text-muted">No providers entered.</p>
-              ) : (
-                validProviders.map(p => (
-                  <div
-                    key={p.id}
-                    className="flex items-center"
-                    style={{ gap: '.5rem', marginBottom: '.375rem' }}
-                  >
-                    <span className="provider-color-dot" style={{ backgroundColor: p.color }} />
-                    <span style={{ fontSize: '.9375rem' }}>{p.name}</span>
-                    {p.type && (
-                      <span className="badge badge--gray">
-                        {PROVIDER_TYPES.find(t => t.value === p.type)?.label}
-                      </span>
-                    )}
-                  </div>
-                ))
-              )}
-            </div>
-
-            <div className="card">
-              <h3 className="section__title">Demographics summary</h3>
-              <div style={{
-                display: 'grid', gridTemplateColumns: '1fr 1fr',
-                gap: '.375rem .75rem', fontSize: '.875rem', color: 'var(--ink-2)',
-              }}>
-                {Object.entries(demographics)
-                  .filter(([, v]) => v !== undefined && v !== null && v !== '')
-                  .map(([k, v]) => (
-                    <div key={k}>
-                      <span className="text-muted">{k.replace(/_/g, ' ')}: </span>
-                      <strong>{Array.isArray(v) ? v.join(', ') : String(v)}</strong>
-                    </div>
-                  ))
-                }
-              </div>
+              You've completed all sections. Click Submit to finish enrollment.
             </div>
 
             <div className="alert alert--info">

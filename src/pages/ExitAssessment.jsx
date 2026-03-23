@@ -34,7 +34,7 @@ const STEPS = [
   'Child Well-being',
   'Parent Cognition',
   'Child Cognition',
-  'Review & Submit',
+  'Submit',
 ]
 
 // A short subset of demographics for the exit survey

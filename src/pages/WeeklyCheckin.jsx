@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import ProgressStepper  from '../components/layout/ProgressStepper'
 import SurveyQuestion   from '../components/survey/SurveyQuestion'
 import CalendarPainter  from '../components/calendar/CalendarPainter'
-import { weeklyCheckinQuestions, PROVIDER_TYPES, PROVIDER_COLORS } from '../data/questions'
+import { weeklyCheckinQuestions, PROVIDER_COLORS } from '../data/questions'
 import {
   getParticipant,
   saveWeeklyCheckin,
@@ -22,7 +22,7 @@ import { computeAllMetrics } from '../utils/metrics'
  * Redirects to /entry?pid=P001 if enrollment has not been completed.
  */
 
-const STEPS = ['Calendar', 'Quick Survey', 'Review']
+const STEPS = ['Calendar', 'Quick Survey', 'Submit']
 
 function newProvider(index, count) {
   return {
@@ -123,7 +123,6 @@ export default function WeeklyCheckin() {
 
   // ── Computed ──────────────────────────────────────────────────────────────
 
-  const metrics        = computeAllMetrics(calendarData, priorCalendar)
   const validProviders = providers.filter(p => p.name.trim())
   const surveyQs       = weeklyCheckinQuestions.filter(q => q.id !== 'provider_changes')
 
@@ -264,65 +263,11 @@ export default function WeeklyCheckin() {
           </div>
         )}
 
-        {/* Step 2: Review */}
+        {/* Step 2: Submit */}
         {step === 2 && (
           <div>
-            <div className="card" style={{ marginBottom: '1rem' }}>
-              <h3 className="section__title">Your calendar this week</h3>
-              <CalendarPainter
-                days={days}
-                providers={validProviders}
-                data={calendarData}
-                onChange={() => {}}
-                readOnly
-              />
-            </div>
-
-            <div className="card" style={{ marginBottom: '1rem' }}>
-              <h3 className="section__title">Computed metrics</h3>
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
-                gap: '.75rem',
-              }}>
-                {[
-                  { label: 'Providers used',        value: metrics.multiplicity },
-                  {
-                    label: 'Instability vs. last week',
-                    value: metrics.instability !== null
-                      ? `${Math.round(metrics.instability * 100)}%` : '—',
-                  },
-                  { label: 'Entropy (bits)',  value: metrics.entropy.toFixed(2) },
-                  {
-                    label: 'Hours filled',
-                    value: `${Math.round(metrics.fillRate * 100)}%`,
-                    warn:  metrics.fillRate < 0.3,
-                  },
-                ].map(({ label, value, warn }) => (
-                  <div
-                    key={label}
-                    style={{
-                      textAlign: 'center', padding: '.875rem',
-                      background: 'var(--stone-2)', borderRadius: 'var(--radius)',
-                    }}
-                  >
-                    <div style={{
-                      fontSize: '1.5rem', fontWeight: 700,
-                      color: warn ? 'var(--amber)' : 'var(--accent)',
-                      letterSpacing: '-.02em',
-                    }}>
-                      {value}
-                    </div>
-                    <div className="text-xs text-muted" style={{ marginTop: '.25rem' }}>{label}</div>
-                  </div>
-                ))}
-              </div>
-              {metrics.fillRate < 0.2 && (
-                <div className="alert alert--warning" style={{ marginTop: '1rem', marginBottom: 0 }}>
-                  Your calendar looks mostly empty. Please go back and fill in the hours
-                  when your child was in care.
-                </div>
-              )}
+            <div className="alert alert--success">
+              You've completed this week's check-in. Click Submit to save your responses.
             </div>
 
             <div className="alert alert--info">

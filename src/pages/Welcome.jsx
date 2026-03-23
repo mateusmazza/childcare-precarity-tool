@@ -35,7 +35,7 @@ export default function Welcome() {
       <div className="hero">
         <p className="hero__eyebrow">Stanford Graduate School of Education</p>
         <h1 className="hero__title">
-          Care<span>meter</span>
+          Care<span>mometer</span>
         </h1>
         <p className="hero__subtitle">
           A research study on childcare precarity — how families find, afford,
