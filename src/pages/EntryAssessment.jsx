@@ -8,8 +8,6 @@ import {
   reasonableEffortQuestions,
   childDevelopmentQuestions,
   meetsNeedsQuestions,
-  parentEmotionalQuestions,
-  childEmotionalQuestions,
   parentCognitionQuestions,
   childCognitionQuestions,
   PROVIDER_TYPES,
@@ -37,8 +35,6 @@ const STEPS = [
   'Access & Effort',
   'Child Development',
   'Meets Your Needs',
-  'Parent Well-being',
-  'Child Well-being',
   'Parent Cognition',
   'Child Cognition',
   'Submit',
@@ -68,6 +64,7 @@ function SurveySection({ questions, answers, setAnswers, filterConditional }) {
           key={q.id}
           question={q}
           value={answers[q.id]}
+          allAnswers={answers}
           onChange={val => setAnswers({ ...answers, [q.id]: val })}
         />
       ))}
@@ -79,18 +76,32 @@ export default function EntryAssessment() {
   const navigate       = useNavigate()
   const [params]       = useSearchParams()
   const pid            = params.get('pid')
+  const existingParticipant = pid ? getParticipant(pid) : null
+  const existingEntry = existingParticipant?.entryAssessment || {}
 
   const [step, setStep]                     = useState(0)
-  const [demographics, setDemographics]     = useState({})
-  const [providers, setProviders]           = useState([newProvider(0)])
-  const [affordability, setAffordability]   = useState({})
-  const [effort, setEffort]                 = useState({})
-  const [childDev, setChildDev]             = useState({})
-  const [meetsNeeds, setMeetsNeeds]         = useState({})
-  const [parentEmotional, setParentEmotional] = useState({})
-  const [childEmotional, setChildEmotional] = useState({})
-  const [parentCognition, setParentCognition] = useState({})
-  const [childCognition, setChildCognition] = useState({})
+  const [demographics, setDemographics]     = useState(existingEntry.demographics || {})
+  const [providers, setProviders]           = useState(existingParticipant?.providers?.length ? existingParticipant.providers : [newProvider(0)])
+  const [affordability, setAffordability]   = useState(existingEntry.affordability || {})
+  const [effort, setEffort]                 = useState(existingEntry.effort || {})
+  const [childDev, setChildDev]             = useState(existingEntry.childDev || {})
+  const [meetsNeeds, setMeetsNeeds]         = useState(existingEntry.meetsNeeds || {})
+  const [parentCognition, setParentCognition] = useState(existingEntry.parentCognition || {})
+  const [childCognition, setChildCognition] = useState(existingEntry.childCognition || {})
+
+  useEffect(() => {
+    if (!pid) return
+
+    // Auto-create participant if needed
+    let p = getParticipant(pid)
+    if (!p) p = createParticipant(pid)
+
+    // Redirect to consent if not yet given
+    if (!p.consentGiven) {
+      navigate(`/consent?pid=${pid}`)
+      return
+    }
+  }, [navigate, pid])
 
   // Guard — missing pid
   if (!pid) {
@@ -108,31 +119,6 @@ export default function EntryAssessment() {
     )
   }
 
-  useEffect(() => {
-    // Auto-create participant if needed
-    let p = getParticipant(pid)
-    if (!p) p = createParticipant(pid)
-
-    // Redirect to consent if not yet given
-    if (!p.consentGiven) {
-      navigate(`/consent?pid=${pid}`)
-      return
-    }
-
-    // Rehydrate saved answers
-    const entry = p.entryAssessment || {}
-    if (entry.demographics) setDemographics(entry.demographics)
-    if (p.providers?.length) setProviders(p.providers)
-    if (entry.affordability) setAffordability(entry.affordability)
-    if (entry.effort)        setEffort(entry.effort)
-    if (entry.childDev)      setChildDev(entry.childDev)
-    if (entry.meetsNeeds)    setMeetsNeeds(entry.meetsNeeds)
-    if (entry.parentEmotional) setParentEmotional(entry.parentEmotional)
-    if (entry.childEmotional)  setChildEmotional(entry.childEmotional)
-    if (entry.parentCognition) setParentCognition(entry.parentCognition)
-    if (entry.childCognition)  setChildCognition(entry.childCognition)
-  }, [pid])
-
   // ── Provider management ──────────────────────────────────────────────────
 
   function addProvider()              { setProviders(prev => [...prev, newProvider(prev.length)]) }
@@ -149,10 +135,8 @@ export default function EntryAssessment() {
       case 3:  saveEntryAssessmentSection(pid, 'effort',          effort);          break
       case 4:  saveEntryAssessmentSection(pid, 'childDev',        childDev);        break
       case 5:  saveEntryAssessmentSection(pid, 'meetsNeeds',      meetsNeeds);      break
-      case 6:  saveEntryAssessmentSection(pid, 'parentEmotional', parentEmotional); break
-      case 7:  saveEntryAssessmentSection(pid, 'childEmotional',  childEmotional);  break
-      case 8:  saveEntryAssessmentSection(pid, 'parentCognition', parentCognition); break
-      case 9:  saveEntryAssessmentSection(pid, 'childCognition',  childCognition);  break
+      case 6:  saveEntryAssessmentSection(pid, 'parentCognition', parentCognition); break
+      case 7:  saveEntryAssessmentSection(pid, 'childCognition',  childCognition);  break
       default: break
     }
   }
@@ -323,7 +307,7 @@ export default function EntryAssessment() {
             <div className="alert alert--info">
               The following questions ask about each of your childcare providers separately.
             </div>
-            {validProviders.map((p, i) => (
+            {validProviders.map(p => (
               <div key={p.id} style={{ marginBottom: '2rem' }}>
                 <h3 className="section__title" style={{ display: 'flex', alignItems: 'center', gap: '.5rem' }}>
                   <span className="provider-color-dot" style={{ backgroundColor: p.color }} />
@@ -355,40 +339,12 @@ export default function EntryAssessment() {
           />
         )}
 
-        {/* Step 6: Parent Emotional */}
+        {/* Step 6: Parent Cognition */}
         {step === 6 && (
           <div>
             <div className="alert alert--warning">
               <strong>Placeholder questions</strong> — These will be replaced with a
               validated instrument once selected.
-            </div>
-            <SurveySection
-              questions={parentEmotionalQuestions}
-              answers={parentEmotional}
-              setAnswers={setParentEmotional}
-            />
-          </div>
-        )}
-
-        {/* Step 7: Child Emotional */}
-        {step === 7 && (
-          <div>
-            <div className="alert alert--warning">
-              <strong>Placeholder questions</strong> — To be replaced with validated instrument.
-            </div>
-            <SurveySection
-              questions={childEmotionalQuestions}
-              answers={childEmotional}
-              setAnswers={setChildEmotional}
-            />
-          </div>
-        )}
-
-        {/* Step 8: Parent Cognition */}
-        {step === 8 && (
-          <div>
-            <div className="alert alert--warning">
-              <strong>Placeholder questions</strong> — To be replaced with validated instrument.
             </div>
             <SurveySection
               questions={parentCognitionQuestions}
@@ -398,8 +354,8 @@ export default function EntryAssessment() {
           </div>
         )}
 
-        {/* Step 9: Child Cognition */}
-        {step === 9 && (
+        {/* Step 7: Child Cognition */}
+        {step === 7 && (
           <div>
             <div className="alert alert--warning">
               <strong>Placeholder questions</strong> — To be replaced with validated instrument.
@@ -412,8 +368,8 @@ export default function EntryAssessment() {
           </div>
         )}
 
-        {/* Step 10: Submit */}
-        {step === 10 && (
+        {/* Step 8: Submit */}
+        {step === 8 && (
           <div>
             <div className="alert alert--success">
               You've completed all sections. Click Submit to finish enrollment.

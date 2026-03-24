@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router-dom'
-
 // Simple inline SVG icons — no emoji
 function IconCalendar() {
   return (
@@ -27,8 +25,6 @@ function IconAcademic() {
 }
 
 export default function Welcome() {
-  const navigate = useNavigate()
-
   return (
     <div>
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

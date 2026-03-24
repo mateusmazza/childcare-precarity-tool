@@ -7,8 +7,6 @@ import {
   affordabilityQuestions,
   reasonableEffortQuestions,
   meetsNeedsQuestions,
-  parentEmotionalQuestions,
-  childEmotionalQuestions,
   parentCognitionQuestions,
   childCognitionQuestions,
 } from '../data/questions'
@@ -30,8 +28,6 @@ const STEPS = [
   'Affordability',
   'Access & Effort',
   'Meets Your Needs',
-  'Parent Well-being',
-  'Child Well-being',
   'Parent Cognition',
   'Child Cognition',
   'Submit',
@@ -50,6 +46,7 @@ function SurveySection({ questions, answers, setAnswers }) {
           key={q.id}
           question={q}
           value={answers[q.id]}
+          allAnswers={answers}
           onChange={val => setAnswers(prev => ({ ...prev, [q.id]: val }))}
         />
       ))}
@@ -61,16 +58,24 @@ export default function ExitAssessment() {
   const navigate  = useNavigate()
   const [params]  = useSearchParams()
   const pid       = params.get('pid')
+  const existingParticipant = pid ? getParticipant(pid) : null
+  const existingExit = existingParticipant?.exitAssessment || {}
 
   const [step, setStep]                       = useState(0)
-  const [currentSituation, setCurrentSituation] = useState({})
-  const [affordability, setAffordability]     = useState({})
-  const [effort, setEffort]                   = useState({})
-  const [meetsNeeds, setMeetsNeeds]           = useState({})
-  const [parentEmotional, setParentEmotional] = useState({})
-  const [childEmotional, setChildEmotional]   = useState({})
-  const [parentCognition, setParentCognition] = useState({})
-  const [childCognition, setChildCognition]   = useState({})
+  const [currentSituation, setCurrentSituation] = useState(existingExit.currentSituation || {})
+  const [affordability, setAffordability]     = useState(existingExit.affordability || {})
+  const [effort, setEffort]                   = useState(existingExit.effort || {})
+  const [meetsNeeds, setMeetsNeeds]           = useState(existingExit.meetsNeeds || {})
+  const [parentCognition, setParentCognition] = useState(existingExit.parentCognition || {})
+  const [childCognition, setChildCognition]   = useState(existingExit.childCognition || {})
+
+  useEffect(() => {
+    if (!pid) return
+
+    const p = getParticipant(pid)
+    if (!p) { navigate(`/consent?pid=${pid}`); return }
+    if (!p.entryAssessment?.completedAt) { navigate(`/entry?pid=${pid}`); return }
+  }, [navigate, pid])
 
   // Guard
   if (!pid) {
@@ -88,33 +93,14 @@ export default function ExitAssessment() {
     )
   }
 
-  useEffect(() => {
-    const p = getParticipant(pid)
-    if (!p) { navigate(`/consent?pid=${pid}`); return }
-    if (!p.entryAssessment?.completedAt) { navigate(`/entry?pid=${pid}`); return }
-
-    // Rehydrate saved exit data
-    const exit = p.exitAssessment || {}
-    if (exit.currentSituation) setCurrentSituation(exit.currentSituation)
-    if (exit.affordability)    setAffordability(exit.affordability)
-    if (exit.effort)           setEffort(exit.effort)
-    if (exit.meetsNeeds)       setMeetsNeeds(exit.meetsNeeds)
-    if (exit.parentEmotional)  setParentEmotional(exit.parentEmotional)
-    if (exit.childEmotional)   setChildEmotional(exit.childEmotional)
-    if (exit.parentCognition)  setParentCognition(exit.parentCognition)
-    if (exit.childCognition)   setChildCognition(exit.childCognition)
-  }, [pid])
-
   function saveCurrentStep() {
     switch (step) {
       case 0: saveExitAssessmentSection(pid, 'currentSituation', currentSituation); break
       case 1: saveExitAssessmentSection(pid, 'affordability',    affordability);    break
       case 2: saveExitAssessmentSection(pid, 'effort',           effort);           break
       case 3: saveExitAssessmentSection(pid, 'meetsNeeds',       meetsNeeds);       break
-      case 4: saveExitAssessmentSection(pid, 'parentEmotional',  parentEmotional);  break
-      case 5: saveExitAssessmentSection(pid, 'childEmotional',   childEmotional);   break
-      case 6: saveExitAssessmentSection(pid, 'parentCognition',  parentCognition);  break
-      case 7: saveExitAssessmentSection(pid, 'childCognition',   childCognition);   break
+      case 4: saveExitAssessmentSection(pid, 'parentCognition',  parentCognition);  break
+      case 5: saveExitAssessmentSection(pid, 'childCognition',   childCognition);   break
       default: break
     }
   }
@@ -181,37 +167,13 @@ export default function ExitAssessment() {
               <strong>Placeholder questions</strong> — To be replaced with a validated instrument.
             </div>
             <SurveySection
-              questions={parentEmotionalQuestions}
-              answers={parentEmotional}
-              setAnswers={setParentEmotional}
-            />
-          </div>
-        )}
-        {step === 5 && (
-          <div>
-            <div className="alert alert--warning">
-              <strong>Placeholder questions</strong> — To be replaced with a validated instrument.
-            </div>
-            <SurveySection
-              questions={childEmotionalQuestions}
-              answers={childEmotional}
-              setAnswers={setChildEmotional}
-            />
-          </div>
-        )}
-        {step === 6 && (
-          <div>
-            <div className="alert alert--warning">
-              <strong>Placeholder questions</strong> — To be replaced with a validated instrument.
-            </div>
-            <SurveySection
               questions={parentCognitionQuestions}
               answers={parentCognition}
               setAnswers={setParentCognition}
             />
           </div>
         )}
-        {step === 7 && (
+        {step === 5 && (
           <div>
             <div className="alert alert--warning">
               <strong>Placeholder questions</strong> — To be replaced with a validated instrument.
@@ -223,7 +185,7 @@ export default function ExitAssessment() {
             />
           </div>
         )}
-        {step === 8 && (
+        {step === 6 && (
           <div>
             <div className="alert alert--success">
               You've completed all sections of the exit assessment. Click Submit to finish.

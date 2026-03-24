@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useContext, useState } from 'react'
 import { getResearcherAuth } from '../utils/storage'
 
 const AppContext = createContext(null)
@@ -15,14 +15,8 @@ const AppContext = createContext(null)
  * self-contained and mirrors how they will behave as separate Qualtrics surveys.
  */
 export function AppProvider({ children }) {
-  const [isResearcher, setIsResearcher] = useState(false)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const r = getResearcherAuth()
-    if (r?.authenticated) setIsResearcher(true)
-    setLoading(false)
-  }, [])
+  const [isResearcher, setIsResearcher] = useState(() => Boolean(getResearcherAuth()?.authenticated))
+  const [loading] = useState(false)
 
   return (
     <AppContext.Provider value={{ isResearcher, setIsResearcher, loading }}>
@@ -31,6 +25,7 @@ export function AppProvider({ children }) {
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useApp() {
   const ctx = useContext(AppContext)
   if (!ctx) throw new Error('useApp must be used inside AppProvider')

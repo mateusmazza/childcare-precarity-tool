@@ -32,13 +32,10 @@ export default function CalendarPainter({ days, providers, data, onChange, readO
   const [selectedTool, setSelectedTool] = useState(providers[0]?.id || null)
   const isPainting = useRef(false)
   const activePointerId = useRef(null)
-
-  // Sync selected tool if providers change (e.g. first load)
-  useEffect(() => {
-    if (!selectedTool && providers.length > 0) {
-      setSelectedTool(providers[0].id)
-    }
-  }, [providers])
+  const activeSelectedTool =
+    selectedTool === 'eraser' || providers.some(p => p.id === selectedTool)
+      ? selectedTool
+      : (providers[0]?.id || null)
 
   function getCellValue(date, hour) {
     return data?.[date]?.[hour] ?? null
@@ -46,7 +43,7 @@ export default function CalendarPainter({ days, providers, data, onChange, readO
 
   function paintCell(date, hour) {
     if (readOnly) return
-    const value = selectedTool === 'eraser' ? null : selectedTool
+    const value = activeSelectedTool === 'eraser' ? null : activeSelectedTool
     if (data?.[date]?.[hour] === value) return
     const newData = {
       ...data,
@@ -120,7 +117,7 @@ export default function CalendarPainter({ days, providers, data, onChange, readO
       {!readOnly && (
         <ProviderLegend
           providers={providers}
-          selectedTool={selectedTool}
+          selectedTool={activeSelectedTool}
           onSelect={setSelectedTool}
         />
       )}

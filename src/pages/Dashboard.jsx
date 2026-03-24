@@ -1,10 +1,8 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import { useApp } from '../context/AppContext'
 import {
   researcherLogin,
   getAllParticipantIds,
-  getAllParticipants,
   getParticipant,
   createParticipant,
   exportParticipantCSV,
@@ -286,16 +284,10 @@ function ParticipantDetail({ pid }) {
 // ── Main dashboard ─────────────────────────────────────────────────────────────
 
 function DashboardContent() {
-  const [pids, setPids]             = useState([])
-  const [selectedPid, setSelectedPid] = useState(null)
+  const [pids, setPids]             = useState(() => getAllParticipantIds())
+  const [selectedPid, setSelectedPid] = useState(() => getAllParticipantIds()[0] || null)
   const [newPid, setNewPid]         = useState('')
   const [addError, setAddError]     = useState('')
-
-  useEffect(() => {
-    const ids = getAllParticipantIds()
-    setPids(ids)
-    if (ids.length > 0 && !selectedPid) setSelectedPid(ids[0])
-  }, [])
 
   function handleAddParticipant(e) {
     e.preventDefault()

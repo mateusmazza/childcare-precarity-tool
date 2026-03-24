@@ -40,13 +40,29 @@ export default function WeeklyCheckin() {
 
   const weekId = getCurrentWeekId()
   const days   = getPast7Days()
+  const existingParticipant = pid ? getParticipant(pid) : null
+  const existingCheckin = pid ? getWeeklyCheckin(pid, weekId) : null
+  const existingProviders = existingCheckin?.providers || existingParticipant?.providers || []
+  const existingPriorCalendar = existingParticipant
+    ? (existingParticipant.weeklyCheckins || [])
+        .filter(c => c.id !== weekId && c.completedAt)
+        .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))[0]?.calendarData || null
+    : null
 
   const [step, setStep]                     = useState(0)
-  const [calendarData, setCalendarData]     = useState({})
-  const [providers, setProviders]           = useState([])
-  const [surveyAnswers, setSurveyAnswers]   = useState({})
+  const [calendarData, setCalendarData]     = useState(existingCheckin?.calendarData || {})
+  const [providers, setProviders]           = useState(existingProviders.length > 0 ? existingProviders : [])
+  const [surveyAnswers, setSurveyAnswers]   = useState(existingCheckin?.surveyAnswers || {})
   const [showProviderEdit, setShowProviderEdit] = useState(false)
-  const [priorCalendar, setPriorCalendar]   = useState(null)
+  const [priorCalendar]                     = useState(existingPriorCalendar)
+
+  useEffect(() => {
+    if (!pid) return
+
+    const p = getParticipant(pid)
+    if (!p) { navigate(`/consent?pid=${pid}`); return }
+    if (!p.entryAssessment?.completedAt) { navigate(`/entry?pid=${pid}`); return }
+  }, [navigate, pid, weekId])
 
   // Guard — missing pid
   if (!pid) {
@@ -63,27 +79,6 @@ export default function WeeklyCheckin() {
       </div>
     )
   }
-
-  useEffect(() => {
-    const p = getParticipant(pid)
-    if (!p) { navigate(`/consent?pid=${pid}`); return }
-    if (!p.entryAssessment?.completedAt) { navigate(`/entry?pid=${pid}`); return }
-
-    // Load current week's data
-    const saved = getWeeklyCheckin(pid, weekId)
-    if (saved?.calendarData)  setCalendarData(saved.calendarData)
-    if (saved?.surveyAnswers) setSurveyAnswers(saved.surveyAnswers)
-
-    // Providers: this week's snapshot → participant record
-    const providerSource = saved?.providers || p.providers || []
-    setProviders(providerSource.length > 0 ? providerSource : [])
-
-    // Prior week for instability metric
-    const allCheckins = (p.weeklyCheckins || [])
-      .filter(c => c.id !== weekId && c.completedAt)
-      .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
-    if (allCheckins.length > 0) setPriorCalendar(allCheckins[0].calendarData || null)
-  }, [pid])
 
   // ── Autosave ─────────────────────────────────────────────────────────────
 
