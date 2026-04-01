@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import { AppProvider } from './context/AppContext'
 import Header        from './components/layout/Header'
 import Footer        from './components/layout/Footer'
-import Welcome        from './pages/Welcome'
+import Screener       from './pages/Screener'
 import Consent        from './pages/Consent'
 import EntryAssessment from './pages/EntryAssessment'
 import WeeklyCheckin   from './pages/WeeklyCheckin'
@@ -14,7 +14,7 @@ import './App.css'
 /**
  * Route structure
  *
- *  /                      Public landing page
+ *  /                      Eligibility screener (Instrument 0 — public, no pid required)
  *  /consent?pid=…         Informed consent (step 1 of entry flow)
  *  /entry?pid=…           Enrollment / entry assessment
  *  /checkin?pid=…         Weekly check-in
@@ -35,7 +35,7 @@ export default function App() {
           <Header />
           <main className="app-main">
             <Routes>
-              <Route path="/"          element={<Welcome />} />
+              <Route path="/"          element={<Screener />} />
               <Route path="/consent"   element={<Consent />} />
               <Route path="/entry"     element={<EntryAssessment />} />
               <Route path="/checkin"   element={<WeeklyCheckin />} />

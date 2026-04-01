@@ -14,10 +14,11 @@ import { PROVIDER_TYPES } from '../data/questions'
 function makeLinks(pid) {
   const base = `${window.location.origin}${window.location.pathname}`
   return {
-    consent: `${base}#/consent?pid=${pid}`,
-    entry:   `${base}#/entry?pid=${pid}`,
-    checkin: `${base}#/checkin?pid=${pid}`,
-    exit:    `${base}#/exit?pid=${pid}`,
+    screener: `${base}#/?pid=${pid}`,
+    consent:  `${base}#/consent?pid=${pid}`,
+    entry:    `${base}#/entry?pid=${pid}`,
+    checkin:  `${base}#/checkin?pid=${pid}`,
+    exit:     `${base}#/exit?pid=${pid}`,
   }
 }
 
@@ -170,6 +171,9 @@ function ParticipantDetail({ pid }) {
       {/* Status + export */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '.5rem' }}>
         <div style={{ display: 'flex', gap: '.375rem', flexWrap: 'wrap' }}>
+          <span className={`badge badge--${participant.screener?.completedAt ? 'green' : 'gray'}`}>
+            {participant.screener?.completedAt ? 'Screened' : 'Not screened'}
+          </span>
           <span className={`badge badge--${participant.consentGiven ? 'green' : 'gray'}`}>
             {participant.consentGiven ? 'Consented' : 'No consent'}
           </span>
@@ -210,6 +214,53 @@ function ParticipantDetail({ pid }) {
             ))
           )}
         </div>
+
+        {/* Contact info — PII, researcher-only, never exported */}
+        {(participant.contactInfo || participant.screener?.eligibilityAnswers) && (
+          <div className="card">
+            {participant.contactInfo && (
+              <>
+                <h3 className="section__title">
+                  Contact information
+                  <span className="badge badge--amber" style={{ marginLeft: '.5rem', fontSize: '.65rem' }}>PII — not exported</span>
+                </h3>
+                <div style={{ display: 'grid', gap: '.25rem', fontSize: '.8125rem', color: 'var(--ink-2)', marginBottom: '1rem' }}>
+                  {participant.contactInfo.email && (
+                    <div>
+                      <span className="text-muted">Email: </span>
+                      <strong>{participant.contactInfo.email}</strong>
+                    </div>
+                  )}
+                  {participant.contactInfo.phone && (
+                    <div>
+                      <span className="text-muted">Phone: </span>
+                      <strong>{participant.contactInfo.phone}</strong>
+                    </div>
+                  )}
+                  {participant.contactInfo.collectedAt && (
+                    <div>
+                      <span className="text-muted">Collected: </span>
+                      <strong>{participant.contactInfo.collectedAt.slice(0, 10)}</strong>
+                    </div>
+                  )}
+                </div>
+              </>
+            )}
+            {participant.screener?.eligibilityAnswers && (
+              <>
+                <h3 className="section__title">Screener responses</h3>
+                <div style={{ display: 'grid', gap: '.25rem', fontSize: '.8125rem', color: 'var(--ink-2)' }}>
+                  {Object.entries(participant.screener.eligibilityAnswers).map(([k, v]) => (
+                    <div key={k}>
+                      <span className="text-muted">{k.replace(/_/g, ' ')}: </span>
+                      <strong>{String(v)}</strong>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        )}
 
         {/* Demographics snapshot */}
         {participant.entryAssessment?.demographics && (
@@ -273,6 +324,7 @@ function ParticipantDetail({ pid }) {
           Send these links to the participant at the appropriate time.
           Each link carries the participant ID — no login required.
         </p>
+        <LinkRow label="Screener"        url={links.screener} />
         <LinkRow label="Consent / Entry" url={links.consent} />
         <LinkRow label="Weekly check-in" url={links.checkin} />
         <LinkRow label="Exit survey"     url={links.exit} />

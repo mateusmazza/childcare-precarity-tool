@@ -52,6 +52,51 @@ export const CBCL = [
   { value: 2, label: 'Often true/Very true' },
 ]
 
+// ── SCREENER (Instrument 0 — public eligibility check) ────────────────────────
+
+export const screenerQuestions = [
+  {
+    id: 'has_child_under_5',
+    label: 'Do you have a child younger than 5 years old?',
+    type: 'single',
+    required: true,
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no',  label: 'No' },
+    ],
+  },
+  {
+    id: 'on_waitlist',
+    label: 'Are you currently on a waitlist to secure a spot at a childcare facility or provider?',
+    type: 'single',
+    required: true,
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no',  label: 'No' },
+    ],
+  },
+  {
+    id: 'over_18',
+    label: 'Are you 18 years of age or older?',
+    type: 'single',
+    required: true,
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no',  label: 'No' },
+    ],
+  },
+  {
+    id: 'speaks_english',
+    label: 'Are you comfortable completing this study in English?',
+    type: 'single',
+    required: true,
+    options: [
+      { value: 'yes', label: 'Yes' },
+      { value: 'no',  label: 'No' },
+    ],
+  },
+]
+
 // ── DEMOGRAPHICS ──────────────────────────────────────────────────────────────
 
 export const demographicsQuestions = [
@@ -522,17 +567,17 @@ export const meetsNeedsQuestions = [
   },
   {
     id: 'schedule_fit',
-    label: 'How well does your childcare schedule match your work or school schedule?',
+    label: 'My current childcare arrangement matches my work/school schedule.',
     type: 'scale',
     required: false,
-    options: MATCH_5,
+    options: AGREE_5,
   },
   {
     id: 'flexibility',
-    label: 'How flexible is your childcare provider when your schedule unexpectedly changes?',
+    label: 'My current childcare arrangement is flexible when my schedule unexpectedly changes.',
     type: 'scale',
     required: false,
-    options: MATCH_5,
+    options: AGREE_5,
   },
   {
     id: 'work_impact',

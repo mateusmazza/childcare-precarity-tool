@@ -17,8 +17,13 @@
  *   getParticipant(pid)
  *   saveParticipant(pid, data)
  *   createParticipant(pid)
+ *   generateParticipantId()
  *   getAllParticipantIds()
  *   getAllParticipants()
+ *
+ * Screener
+ *   saveScreener(pid, data)
+ *   completeScreener(pid)
  *
  * Consent
  *   saveConsent(pid)
@@ -109,6 +114,17 @@ export function saveParticipant(pid, data) {
   return updated
 }
 
+export function generateParticipantId() {
+  const existing = new Set(getParticipantIds())
+  let n = existing.size + 1
+  let candidate
+  do {
+    candidate = `P${String(n).padStart(3, '0')}`
+    n++
+  } while (existing.has(candidate) && n < 10000)
+  return candidate
+}
+
 export function createParticipant(pid) {
   const participant = {
     id:              pid,
@@ -116,6 +132,7 @@ export function createParticipant(pid) {
     status:          'active',
     consentGiven:    false,
     providers:       [],
+    screener:        null,
     entryAssessment: null,
     exitAssessment:  null,
     weeklyCheckins:  [],
@@ -138,6 +155,21 @@ export function saveConsent(pid) {
 
 export function saveProviders(pid, providers) {
   return saveParticipant(pid, { providers })
+}
+
+// ── Screener ───────────────────────────────────────────────────────────────────
+
+export function saveScreener(pid, data) {
+  const participant = getParticipant(pid)
+  const existing    = participant?.screener || {}
+  const updated     = { ...existing, ...data, lastUpdatedAt: new Date().toISOString() }
+  return saveParticipant(pid, { screener: updated })
+}
+
+export function completeScreener(pid) {
+  const participant = getParticipant(pid)
+  const updated     = { ...participant?.screener, completedAt: new Date().toISOString() }
+  return saveParticipant(pid, { screener: updated })
 }
 
 // ── Entry Assessment ───────────────────────────────────────────────────────────
