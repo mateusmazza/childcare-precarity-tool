@@ -254,13 +254,15 @@ function buildSurvey(name, blockDefs) {
         blockElements.push({ Type: 'Page Break' })
       }
     }
-    blocks.push({
-      Type: blocks.length === 0 ? 'Default' : 'Standard',
-      SubType: '',
+    const isFirst = blocks.length === 0
+    const block = {
+      Type: isFirst ? 'Default' : 'Standard',
       Description: bdef.name,
       ID: blockId,
       BlockElements: blockElements,
-    })
+    }
+    if (!isFirst) block.SubType = ''
+    blocks.push(block)
   }
 
   // Add trash block
@@ -280,26 +282,10 @@ function buildSurvey(name, blockDefs) {
     Payload: blocks,
   })
 
-  // FL element — EmbeddedData for pid, then blocks in order
+  // FL element — blocks in presentation order
+  // Note: add EmbeddedData for 'pid' manually in Qualtrics survey flow
   let flowCounter = 1
   const flowItems = []
-
-  // EmbeddedData for pid
-  flowItems.push({
-    Type: 'EmbeddedData',
-    FlowID: `FL_${++flowCounter}`,
-    EmbeddedData: [
-      {
-        Description: 'pid',
-        Type: 'Recipient',
-        Field: 'pid',
-        VariableType: 'String',
-        DataVisibility: [],
-        AnalyzeText: false,
-        Value: '',
-      },
-    ],
-  })
 
   // Block flow
   for (const block of blocks) {
@@ -365,8 +351,9 @@ function buildSurvey(name, blockDefs) {
       SurveyTitle: `Caremometer — ${name}`,
       SkinLibrary: 'gse',
       SkinType: 'templated',
-      Skin: { templateId: '*base', overrides: null },
+      Skin: { brandingId: null, templateId: '*base', overrides: null },
       NewScoring: 1,
+      SurveyMetaDescription: `Caremometer — ${name}`,
       ProtectSelectionIds: true,
     },
   })

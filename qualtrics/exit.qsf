@@ -1,26 +1,26 @@
 {
   "SurveyEntry": {
-    "SurveyID": "SV_nWujWMkFJLOHpfv",
+    "SurveyID": "SV_R13dVZ1AFTDrKdo",
     "SurveyName": "Caremometer — Exit Assessment",
     "SurveyDescription": null,
     "SurveyOwnerID": "UR_000000000000000",
     "SurveyBrandID": "gse",
     "DivisionID": null,
     "SurveyLanguage": "EN",
-    "SurveyActiveResponseSet": "RS_E3nJP6E4kqjRkff",
+    "SurveyActiveResponseSet": "RS_f1OUu2ZFcAkXVdU",
     "SurveyStatus": "Inactive",
     "SurveyStartDate": "0000-00-00 00:00:00",
     "SurveyExpirationDate": "0000-00-00 00:00:00",
-    "SurveyCreationDate": "2026-04-01 22:54:14",
+    "SurveyCreationDate": "2026-04-01 23:01:15",
     "CreatorID": "UR_000000000000000",
-    "LastModified": "2026-04-01 22:54:14",
+    "LastModified": "2026-04-01 23:01:15",
     "LastAccessed": "0000-00-00 00:00:00",
     "LastActivated": "0000-00-00 00:00:00",
     "Deleted": null
   },
   "SurveyElements": [
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "BL",
       "PrimaryAttribute": "Survey Blocks",
       "SecondaryAttribute": null,
@@ -28,9 +28,8 @@
       "Payload": [
         {
           "Type": "Default",
-          "SubType": "",
           "Description": "Current Situation",
-          "ID": "BL_FVxZIMcYCtVyC",
+          "ID": "BL_7EVOPiMbfiUrC",
           "BlockElements": [
             {
               "Type": "Question",
@@ -68,9 +67,8 @@
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Affordability",
-          "ID": "BL_GvyxTXih7SGNt",
+          "ID": "BL_y53pkcSrl40WS",
           "BlockElements": [
             {
               "Type": "Question",
@@ -97,13 +95,13 @@
               "Type": "Question",
               "QuestionID": "QID4"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Access & Effort",
-          "ID": "BL_JiG4B8cxVyyKI",
+          "ID": "BL_R0Zjdlvp3uOqE",
           "BlockElements": [
             {
               "Type": "Question",
@@ -137,13 +135,13 @@
               "Type": "Question",
               "QuestionID": "QID14"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Meets Your Needs",
-          "ID": "BL_Ti0yAmCT6Fw2q",
+          "ID": "BL_5HoB2ZaW6qBiw",
           "BlockElements": [
             {
               "Type": "Question",
@@ -170,13 +168,13 @@
               "Type": "Question",
               "QuestionID": "QID18"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Parent Cognition (Placeholder)",
-          "ID": "BL_bC5eUoDHlmB1E",
+          "ID": "BL_M1Ed73bDiUWST",
           "BlockElements": [
             {
               "Type": "Question",
@@ -189,13 +187,13 @@
               "Type": "Question",
               "QuestionID": "QID20"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Child Cognition (Placeholder)",
-          "ID": "BL_szR1XpYXcMF6n",
+          "ID": "BL_CFAbnTF8jMibO",
           "BlockElements": [
             {
               "Type": "Question",
@@ -208,17 +206,18 @@
               "Type": "Question",
               "QuestionID": "QID22"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Trash",
           "Description": "Trash / Unused Questions",
-          "ID": "BL_05XbA86uKkLJE"
+          "ID": "BL_Q6ZjXcv47lktA"
         }
       ]
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "FL",
       "PrimaryAttribute": "Survey Flow",
       "SecondaryAttribute": null,
@@ -228,58 +227,43 @@
         "FlowID": "FL_1",
         "Flow": [
           {
-            "Type": "EmbeddedData",
-            "FlowID": "FL_2",
-            "EmbeddedData": [
-              {
-                "Description": "pid",
-                "Type": "Recipient",
-                "Field": "pid",
-                "VariableType": "String",
-                "DataVisibility": [],
-                "AnalyzeText": false,
-                "Value": ""
-              }
-            ]
+            "ID": "BL_7EVOPiMbfiUrC",
+            "Type": "Block",
+            "FlowID": "FL_2"
           },
           {
-            "ID": "BL_FVxZIMcYCtVyC",
-            "Type": "Block",
+            "ID": "BL_y53pkcSrl40WS",
+            "Type": "Standard",
             "FlowID": "FL_3"
           },
           {
-            "ID": "BL_GvyxTXih7SGNt",
+            "ID": "BL_R0Zjdlvp3uOqE",
             "Type": "Standard",
             "FlowID": "FL_4"
           },
           {
-            "ID": "BL_JiG4B8cxVyyKI",
+            "ID": "BL_5HoB2ZaW6qBiw",
             "Type": "Standard",
             "FlowID": "FL_5"
           },
           {
-            "ID": "BL_Ti0yAmCT6Fw2q",
+            "ID": "BL_M1Ed73bDiUWST",
             "Type": "Standard",
             "FlowID": "FL_6"
           },
           {
-            "ID": "BL_bC5eUoDHlmB1E",
+            "ID": "BL_CFAbnTF8jMibO",
             "Type": "Standard",
             "FlowID": "FL_7"
-          },
-          {
-            "ID": "BL_szR1XpYXcMF6n",
-            "Type": "Standard",
-            "FlowID": "FL_8"
           }
         ],
         "Properties": {
-          "Count": 8
+          "Count": 7
         }
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID5",
       "SecondaryAttribute": "This is the final survey of the study. Thank you for your participation.",
@@ -312,7 +296,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID6",
       "SecondaryAttribute": "Which best describes your current employment status?",
@@ -387,7 +371,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID7",
       "SecondaryAttribute": "What is your total household annual income?",
@@ -453,7 +437,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID8",
       "SecondaryAttribute": "Are you currently on any childcare waitlists?",
@@ -500,7 +484,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID9",
       "SecondaryAttribute": "In the past year, have you experienced housing instability?",
@@ -547,7 +531,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID1",
       "SecondaryAttribute": "How much do you pay per month for childcare in total?",
@@ -617,7 +601,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID2",
       "SecondaryAttribute": "Roughly what percentage of your household income goes toward childcare?",
@@ -652,7 +636,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID3",
       "SecondaryAttribute": "Do you receive any childcare subsidy or financial assistance?",
@@ -703,7 +687,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID4",
       "SecondaryAttribute": "What type of childcare subsidy or assistance do you receive? (Select all that apply)",
@@ -780,7 +764,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID10",
       "SecondaryAttribute": "How long does it take to travel to your main childcare provider (one way, in minutes)?",
@@ -815,7 +799,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID11",
       "SecondaryAttribute": "How do you usually get to childcare? (Select all that apply)",
@@ -882,7 +866,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID12",
       "SecondaryAttribute": "Have you had any difficulty finding space in a home- or center-based child care program?",
@@ -941,7 +925,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID13",
       "SecondaryAttribute": "How long did you search before finding your current main childcare arrangement?",
@@ -1004,7 +988,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID14",
       "SecondaryAttribute": "Are you currently looking for child care?",
@@ -1051,7 +1035,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID15",
       "SecondaryAttribute": "My current childcare arrangement is my preferred type of care.",
@@ -1110,7 +1094,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID16",
       "SecondaryAttribute": "My current childcare arrangement matches my work/school schedule.",
@@ -1169,7 +1153,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID17",
       "SecondaryAttribute": "My current childcare arrangement is flexible when my schedule unexpectedly changes.",
@@ -1228,7 +1212,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID18",
       "SecondaryAttribute": "Recent difficulties with childcare have impacted my ability to work or study.",
@@ -1287,7 +1271,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID19",
       "SecondaryAttribute": "Placeholder — to be replaced with a validated instrument.",
@@ -1320,7 +1304,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID20",
       "SecondaryAttribute": "[Placeholder — Parent Cognition]",
@@ -1379,7 +1363,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID21",
       "SecondaryAttribute": "Placeholder — to be replaced with a validated instrument.",
@@ -1412,7 +1396,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SQ",
       "PrimaryAttribute": "QID22",
       "SecondaryAttribute": "[Placeholder — Child Cognition]",
@@ -1471,7 +1455,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SO",
       "PrimaryAttribute": "Survey Options",
       "SecondaryAttribute": null,
@@ -1496,15 +1480,17 @@
         "SkinLibrary": "gse",
         "SkinType": "templated",
         "Skin": {
+          "brandingId": null,
           "templateId": "*base",
           "overrides": null
         },
         "NewScoring": 1,
+        "SurveyMetaDescription": "Caremometer — Exit Assessment",
         "ProtectSelectionIds": true
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "SCO",
       "PrimaryAttribute": "Scoring",
       "SecondaryAttribute": null,
@@ -1520,7 +1506,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "PROJ",
       "PrimaryAttribute": "CORE",
       "SecondaryAttribute": null,
@@ -1531,7 +1517,7 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "QC",
       "PrimaryAttribute": "Survey Question Count",
       "SecondaryAttribute": "22",
@@ -1539,15 +1525,15 @@
       "Payload": null
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "RS",
-      "PrimaryAttribute": "RS_E3nJP6E4kqjRkff",
+      "PrimaryAttribute": "RS_f1OUu2ZFcAkXVdU",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": null
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "STAT",
       "PrimaryAttribute": "Survey Statistics",
       "SecondaryAttribute": null,
@@ -1558,14 +1544,14 @@
       }
     },
     {
-      "SurveyID": "SV_nWujWMkFJLOHpfv",
+      "SurveyID": "SV_R13dVZ1AFTDrKdo",
       "Element": "PL",
       "PrimaryAttribute": "Preview Link",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": {
         "PreviewType": "Brand",
-        "PreviewID": "IxNisRzlvhghZMSjt2BYS6s6vqyeNYzdYCpn"
+        "PreviewID": "VNp4RI78FdtPNmUKwTLa466VBo2lpROsryIu"
       }
     }
   ]

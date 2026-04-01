@@ -1,26 +1,26 @@
 {
   "SurveyEntry": {
-    "SurveyID": "SV_gUgYEIgMHKw18Ha",
+    "SurveyID": "SV_Vsk7ebkcIebVtNF",
     "SurveyName": "Caremometer — Screener",
     "SurveyDescription": null,
     "SurveyOwnerID": "UR_000000000000000",
     "SurveyBrandID": "gse",
     "DivisionID": null,
     "SurveyLanguage": "EN",
-    "SurveyActiveResponseSet": "RS_elgt2LbVF7muJUb",
+    "SurveyActiveResponseSet": "RS_avwK0HWpHtdN0M6",
     "SurveyStatus": "Inactive",
     "SurveyStartDate": "0000-00-00 00:00:00",
     "SurveyExpirationDate": "0000-00-00 00:00:00",
-    "SurveyCreationDate": "2026-04-01 22:54:14",
+    "SurveyCreationDate": "2026-04-01 23:01:15",
     "CreatorID": "UR_000000000000000",
-    "LastModified": "2026-04-01 22:54:14",
+    "LastModified": "2026-04-01 23:01:15",
     "LastAccessed": "0000-00-00 00:00:00",
     "LastActivated": "0000-00-00 00:00:00",
     "Deleted": null
   },
   "SurveyElements": [
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "BL",
       "PrimaryAttribute": "Survey Blocks",
       "SecondaryAttribute": null,
@@ -28,9 +28,8 @@
       "Payload": [
         {
           "Type": "Default",
-          "SubType": "",
           "Description": "Eligibility",
-          "ID": "BL_HsGT9TUohZMMa",
+          "ID": "BL_gj9PLIPSdblda",
           "BlockElements": [
             {
               "Type": "Question",
@@ -75,9 +74,8 @@
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Contact Information",
-          "ID": "BL_ndq3s4by0YNAq",
+          "ID": "BL_lae8GE9HvOob4",
           "BlockElements": [
             {
               "Type": "Question",
@@ -97,17 +95,18 @@
               "Type": "Question",
               "QuestionID": "QID9"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Trash",
           "Description": "Trash / Unused Questions",
-          "ID": "BL_Vpm34tz637SKl"
+          "ID": "BL_0WcMoZ51kHf22"
         }
       ]
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "FL",
       "PrimaryAttribute": "Survey Flow",
       "SecondaryAttribute": null,
@@ -117,38 +116,23 @@
         "FlowID": "FL_1",
         "Flow": [
           {
-            "Type": "EmbeddedData",
-            "FlowID": "FL_2",
-            "EmbeddedData": [
-              {
-                "Description": "pid",
-                "Type": "Recipient",
-                "Field": "pid",
-                "VariableType": "String",
-                "DataVisibility": [],
-                "AnalyzeText": false,
-                "Value": ""
-              }
-            ]
-          },
-          {
-            "ID": "BL_HsGT9TUohZMMa",
+            "ID": "BL_gj9PLIPSdblda",
             "Type": "Block",
-            "FlowID": "FL_3"
+            "FlowID": "FL_2"
           },
           {
-            "ID": "BL_ndq3s4by0YNAq",
+            "ID": "BL_lae8GE9HvOob4",
             "Type": "Standard",
-            "FlowID": "FL_4"
+            "FlowID": "FL_3"
           }
         ],
         "Properties": {
-          "Count": 4
+          "Count": 3
         }
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID1",
       "SecondaryAttribute": "Caremometer — Eligibility ScreeningPlease answer all questions below to check your eligibility for t",
@@ -181,7 +165,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID2",
       "SecondaryAttribute": "Do you have a child younger than 5 years old?",
@@ -228,7 +212,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID3",
       "SecondaryAttribute": "Are you currently on a waitlist to secure a spot at a childcare facility or provider?",
@@ -275,7 +259,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID4",
       "SecondaryAttribute": "Are you 18 years of age or older?",
@@ -322,7 +306,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID5",
       "SecondaryAttribute": "Are you comfortable completing this study in English?",
@@ -369,7 +353,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID6",
       "SecondaryAttribute": "Do you currently live in the United States?",
@@ -416,7 +400,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID7",
       "SecondaryAttribute": "Contact InformationPlease share your contact information so the research team can reach you. This is",
@@ -449,7 +433,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID8",
       "SecondaryAttribute": "Email address",
@@ -483,7 +467,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SQ",
       "PrimaryAttribute": "QID9",
       "SecondaryAttribute": "Phone number",
@@ -517,7 +501,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SO",
       "PrimaryAttribute": "Survey Options",
       "SecondaryAttribute": null,
@@ -542,15 +526,17 @@
         "SkinLibrary": "gse",
         "SkinType": "templated",
         "Skin": {
+          "brandingId": null,
           "templateId": "*base",
           "overrides": null
         },
         "NewScoring": 1,
+        "SurveyMetaDescription": "Caremometer — Screener",
         "ProtectSelectionIds": true
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "SCO",
       "PrimaryAttribute": "Scoring",
       "SecondaryAttribute": null,
@@ -566,7 +552,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "PROJ",
       "PrimaryAttribute": "CORE",
       "SecondaryAttribute": null,
@@ -577,7 +563,7 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "QC",
       "PrimaryAttribute": "Survey Question Count",
       "SecondaryAttribute": "9",
@@ -585,15 +571,15 @@
       "Payload": null
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "RS",
-      "PrimaryAttribute": "RS_elgt2LbVF7muJUb",
+      "PrimaryAttribute": "RS_avwK0HWpHtdN0M6",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": null
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "STAT",
       "PrimaryAttribute": "Survey Statistics",
       "SecondaryAttribute": null,
@@ -604,14 +590,14 @@
       }
     },
     {
-      "SurveyID": "SV_gUgYEIgMHKw18Ha",
+      "SurveyID": "SV_Vsk7ebkcIebVtNF",
       "Element": "PL",
       "PrimaryAttribute": "Preview Link",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": {
         "PreviewType": "Brand",
-        "PreviewID": "f3KUBmMdDCGwtGMTFcHCicQZN5Voux3jaBOA"
+        "PreviewID": "e0egRdXB0CQ4Apy6m91LfGJScM0dO1myQeFm"
       }
     }
   ]

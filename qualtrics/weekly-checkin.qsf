@@ -1,26 +1,26 @@
 {
   "SurveyEntry": {
-    "SurveyID": "SV_ZdBGHr5l90nFGI2",
+    "SurveyID": "SV_p9Vey10IuDEXpdC",
     "SurveyName": "Caremometer — Weekly Check-in",
     "SurveyDescription": null,
     "SurveyOwnerID": "UR_000000000000000",
     "SurveyBrandID": "gse",
     "DivisionID": null,
     "SurveyLanguage": "EN",
-    "SurveyActiveResponseSet": "RS_N8hzu5cdm4EhYU1",
+    "SurveyActiveResponseSet": "RS_Nf8e1wgY0gYb3bg",
     "SurveyStatus": "Inactive",
     "SurveyStartDate": "0000-00-00 00:00:00",
     "SurveyExpirationDate": "0000-00-00 00:00:00",
-    "SurveyCreationDate": "2026-04-01 22:54:14",
+    "SurveyCreationDate": "2026-04-01 23:01:15",
     "CreatorID": "UR_000000000000000",
-    "LastModified": "2026-04-01 22:54:14",
+    "LastModified": "2026-04-01 23:01:15",
     "LastAccessed": "0000-00-00 00:00:00",
     "LastActivated": "0000-00-00 00:00:00",
     "Deleted": null
   },
   "SurveyElements": [
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "BL",
       "PrimaryAttribute": "Survey Blocks",
       "SecondaryAttribute": null,
@@ -28,9 +28,8 @@
       "Payload": [
         {
           "Type": "Default",
-          "SubType": "",
           "Description": "Provider Changes & Calendar",
-          "ID": "BL_1dgaSTYAXKBVR",
+          "ID": "BL_arls6K28rQ96T",
           "BlockElements": [
             {
               "Type": "Question",
@@ -54,9 +53,8 @@
         },
         {
           "Type": "Standard",
-          "SubType": "",
           "Description": "Quick Survey",
-          "ID": "BL_0Bxk40ed2DRxG",
+          "ID": "BL_AVubsDItVgViG",
           "BlockElements": [
             {
               "Type": "Question",
@@ -125,17 +123,18 @@
               "Type": "Question",
               "QuestionID": "QID10"
             }
-          ]
+          ],
+          "SubType": ""
         },
         {
           "Type": "Trash",
           "Description": "Trash / Unused Questions",
-          "ID": "BL_i1VgTi80mtZwN"
+          "ID": "BL_aV8YCGq4RqF3q"
         }
       ]
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "FL",
       "PrimaryAttribute": "Survey Flow",
       "SecondaryAttribute": null,
@@ -145,38 +144,23 @@
         "FlowID": "FL_1",
         "Flow": [
           {
-            "Type": "EmbeddedData",
-            "FlowID": "FL_2",
-            "EmbeddedData": [
-              {
-                "Description": "pid",
-                "Type": "Recipient",
-                "Field": "pid",
-                "VariableType": "String",
-                "DataVisibility": [],
-                "AnalyzeText": false,
-                "Value": ""
-              }
-            ]
-          },
-          {
-            "ID": "BL_1dgaSTYAXKBVR",
+            "ID": "BL_arls6K28rQ96T",
             "Type": "Block",
-            "FlowID": "FL_3"
+            "FlowID": "FL_2"
           },
           {
-            "ID": "BL_0Bxk40ed2DRxG",
+            "ID": "BL_AVubsDItVgViG",
             "Type": "Standard",
-            "FlowID": "FL_4"
+            "FlowID": "FL_3"
           }
         ],
         "Properties": {
-          "Count": 4
+          "Count": 3
         }
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID11",
       "SecondaryAttribute": "Have there been any changes to your childcare providers since last week?",
@@ -223,7 +207,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID12",
       "SecondaryAttribute": "Weekly Calendar\nUse the calendar below to mark which provider cared for your child during each hour ",
@@ -256,7 +240,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID13",
       "SecondaryAttribute": "Calendar data (JSON — filled automatically by the interactive calendar, or describe your schedule ma",
@@ -290,7 +274,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID1",
       "SecondaryAttribute": "Did you get off from any waitlists this week?",
@@ -337,7 +321,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID2",
       "SecondaryAttribute": "Was your exit caused by any of the following?",
@@ -410,7 +394,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID3",
       "SecondaryAttribute": "Did you experience any unexpected disruption to your childcare this week?",
@@ -457,7 +441,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID4",
       "SecondaryAttribute": "In the last week, how often have you felt nervous, anxious, or on edge?",
@@ -512,7 +496,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID5",
       "SecondaryAttribute": "In the last week, how often were you not able to stop or control worrying?",
@@ -567,7 +551,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID6",
       "SecondaryAttribute": "In the last week, how often have you felt little interest or pleasure in doing things?",
@@ -622,7 +606,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID7",
       "SecondaryAttribute": "In the last week, how often have you felt down, depressed, or hopeless?",
@@ -677,7 +661,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID8",
       "SecondaryAttribute": "Stress means a situation in which a person feels tense, restless, nervous or anxious. Have you felt ",
@@ -736,7 +720,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID9",
       "SecondaryAttribute": "In the past week, has your child been fearful or anxious?",
@@ -787,7 +771,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SQ",
       "PrimaryAttribute": "QID10",
       "SecondaryAttribute": "In the past week, has your child been fussy or defiant?",
@@ -838,7 +822,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SO",
       "PrimaryAttribute": "Survey Options",
       "SecondaryAttribute": null,
@@ -863,15 +847,17 @@
         "SkinLibrary": "gse",
         "SkinType": "templated",
         "Skin": {
+          "brandingId": null,
           "templateId": "*base",
           "overrides": null
         },
         "NewScoring": 1,
+        "SurveyMetaDescription": "Caremometer — Weekly Check-in",
         "ProtectSelectionIds": true
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "SCO",
       "PrimaryAttribute": "Scoring",
       "SecondaryAttribute": null,
@@ -887,7 +873,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "PROJ",
       "PrimaryAttribute": "CORE",
       "SecondaryAttribute": null,
@@ -898,7 +884,7 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "QC",
       "PrimaryAttribute": "Survey Question Count",
       "SecondaryAttribute": "13",
@@ -906,15 +892,15 @@
       "Payload": null
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "RS",
-      "PrimaryAttribute": "RS_N8hzu5cdm4EhYU1",
+      "PrimaryAttribute": "RS_Nf8e1wgY0gYb3bg",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": null
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "STAT",
       "PrimaryAttribute": "Survey Statistics",
       "SecondaryAttribute": null,
@@ -925,14 +911,14 @@
       }
     },
     {
-      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "SurveyID": "SV_p9Vey10IuDEXpdC",
       "Element": "PL",
       "PrimaryAttribute": "Preview Link",
       "SecondaryAttribute": null,
       "TertiaryAttribute": null,
       "Payload": {
         "PreviewType": "Brand",
-        "PreviewID": "A9KMIMg4fBitsmA5WsFzpHxSqLFTJ6BgSyw7"
+        "PreviewID": "IchIemG2HQc538cPW4XT4f76d1xzsK0X5sEa"
       }
     }
   ]
