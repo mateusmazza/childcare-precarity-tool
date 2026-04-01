@@ -1,26 +1,29 @@
 # Caremometer
 
-A prototype longitudinal web application for measuring childcare precarity in research studies.
+A free, open-source longitudinal web tool for measuring childcare precarity in research studies.
 
-Built by Mateus Mazzaferro, Stanford Graduate School of Education  
-Live demo: [https://mateusmazza.github.io/caremometer/](https://mateusmazza.github.io/caremometer/)  
-Current stack: React + Vite + `localStorage` + GitHub Pages
+Built by Mateus Mazzaferro, Stanford Graduate School of Education
+Live demo: [https://mateusmazza.github.io/caremometer/](https://mateusmazza.github.io/caremometer/)
+Stack: React 19 + Vite + Firebase (Firestore + Auth) + GitHub Pages
 
 ---
 
-## Current Prototype
+## Overview
 
-This repository currently contains a standalone front-end prototype. Participant and researcher data are stored locally in the browser via `localStorage`; there is no backend or cloud database wired up in this version.
+Caremometer is a survey platform designed for small-to-medium longitudinal studies (~100 participants). Participant data is stored in Google Firestore (free tier) and the app is hosted on GitHub Pages. Researcher access is protected by Firebase Authentication.
 
-The app is organized around three participant instruments plus a researcher dashboard:
+The app is organized around four instruments plus a researcher dashboard:
 
-- Consent flow via `/consent?pid=...`
-- Enrollment survey via `/entry?pid=...`
-- Weekly check-in via `/checkin?pid=...`
-- Exit assessment via `/exit?pid=...`
-- Researcher dashboard via `/dashboard`
+| Route | Instrument | Access |
+|-------|-----------|--------|
+| `/` | Eligibility screener | Public |
+| `/consent?pid=...` | Informed consent | Participant link |
+| `/entry?pid=...` | Enrollment survey (~30 min) | Participant link |
+| `/checkin?pid=...` | Weekly check-in (~5 min) | Participant link |
+| `/exit?pid=...` | Exit assessment (~30 min) | Participant link |
+| `/dashboard` | Researcher dashboard | Firebase Auth |
 
-Each participant-facing route uses a `pid` query parameter. That structure is intentional so the flow can later be adapted to Qualtrics embedded data or a backend without rewriting the survey logic.
+Each participant-facing route uses a `pid` query parameter. The researcher generates these links from the dashboard and sends them to participants.
 
 ---
 
@@ -28,36 +31,23 @@ Each participant-facing route uses a `pid` query parameter. That structure is in
 
 Caremometer operationalizes childcare precarity across five dimensions:
 
-1. Affordability
-2. Reasonable effort
-3. Supports child development
-4. Meets parents' needs
-5. Instability over time
+1. **Affordability** — cost burden and financial strain
+2. **Reasonable effort** — how hard it is to find and maintain care
+3. **Supports child development** — quality ratings per provider
+4. **Meets parents' needs** — schedule fit, flexibility, preference match
+5. **Instability over time** — week-to-week changes in care arrangements
 
 The weekly calendar data is also used to compute:
 
-- Multiplicity: number of distinct providers used in a week
-- Instability: proportion of time slots that changed versus the prior completed week
-- Entropy: Shannon entropy of provider usage within a week
+- **Multiplicity**: number of distinct providers used in a week
+- **Instability**: proportion of time slots that changed versus the prior week
+- **Entropy**: Shannon entropy of provider usage within a week
 
-These metrics are computed and stored for researcher export, but they are not shown back to participants in the current UI.
-
----
-
-## Current Features
-
-- Enrollment survey with demographics, provider roster, affordability, effort, child development, needs, and placeholder well-being/cognition sections
-- Provider roster defaults so `Provider 1` starts as `Myself` with `Parent / self-care`
-- Weekly calendar check-in with editable provider roster
-- Touch-friendly calendar painting using pointer events, including vertical drag painting on phones
-- Exit assessment mirroring the enrollment structure
-- Password-protected researcher dashboard with participant overview and CSV export
-- Thank-you / submission screens without participant-facing answer summaries
-- Responsive mobile layout intended to stay portable to a future Qualtrics adaptation
+These metrics are computed and stored for researcher export but are not shown to participants.
 
 ---
 
-## Quickstart
+## Quickstart (for developers)
 
 ```bash
 git clone https://github.com/mateusmazza/caremometer.git
@@ -66,91 +56,138 @@ npm install
 npm run dev
 ```
 
-Vite will print the local dev URL in the terminal. In production, the app is configured for GitHub Pages using a hash router.
+The app connects to the existing Caremometer Firestore project by default. To use your own Firebase project, see **Setting Up Your Own Instance** below.
 
 ---
 
-## Configuration
+## Setting Up Your Own Instance
 
-### Researcher password
+If you want to run Caremometer for your own study with your own data, follow these steps. The entire setup takes about 30 minutes and costs nothing.
 
-The dashboard password is read from `VITE_RESEARCHER_PASSWORD`. If that variable is not set, the prototype falls back to:
-
-```text
-precarity-research-2025
-```
-
-Create a local `.env` file if you want to override it during development:
+### 1. Fork and clone the repository
 
 ```bash
-VITE_RESEARCHER_PASSWORD=your-password-here
+git clone https://github.com/YOUR_USERNAME/caremometer.git
+cd caremometer
+npm install
 ```
 
-### Data storage
+### 2. Create a Firebase project
 
-All prototype data is stored in the browser's `localStorage`. That means:
+1. Go to [console.firebase.google.com](https://console.firebase.google.com) and click **Add project**
+2. Name it (e.g., `my-study-caremometer`) and disable Google Analytics
+3. Click **Create project**
 
-- data is browser-specific
-- data is device-specific
-- clearing browser storage will erase saved prototype data
-- multiple test participants can coexist in one browser because records are keyed by `pid`
+### 3. Enable Firestore
 
-This is useful for prototyping, but it is not a production data architecture.
+1. In the Firebase console sidebar, click **Build > Firestore Database**
+2. Click **Create database**
+3. Choose **Start in production mode** and select **us-central** as the location
+4. Click **Enable**
+
+### 4. Enable Authentication
+
+1. Click **Build > Authentication > Get started**
+2. Click **Email/Password**, toggle it on, and click **Save**
+3. Go to the **Users** tab and click **Add user**
+4. Enter the email and password you want to use for the researcher dashboard
+
+### 5. Register a web app and get your config
+
+1. Go to **Project Settings** (gear icon) > **Your apps** > click the **</>** (Web) icon
+2. Name it (e.g., `caremometer-web`), leave Firebase Hosting unchecked
+3. Click **Register app** — you will see a `firebaseConfig` object
+4. Open `src/firebase.js` in your fork and replace the existing config values with yours
+
+### 6. Set up Firestore security rules
+
+1. In the Firebase console, go to **Firestore Database > Rules**
+2. Replace the content with:
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /participants/{pid} {
+      allow read, write: if true;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+```
+
+3. Click **Publish**
+
+> These rules allow open read/write on participant documents (access is controlled by knowing the participant ID, which is distributed by the researcher). All other collections are denied. For higher-security deployments, you can restrict writes or require authentication.
+
+### 7. Deploy
+
+Deploy to GitHub Pages, Vercel, Netlify, or any static host:
+
+```bash
+npm run build
+# The built files are in dist/
+```
+
+For GitHub Pages, set your repository's Pages source to the `gh-pages` branch or configure a deploy action.
 
 ---
 
 ## Researcher Workflow
 
-In the current prototype, the researcher uses the dashboard to:
-
-- create/open participant records by visiting participant-specific links with a `pid`
-- monitor enrollment and completion status
-- copy instrument links
-- export participant data as CSV
-
-The exported CSV is long-format and includes participant identifiers, selected demographics, calendar rows, provider details, and computed weekly metrics.
+1. Go to `/dashboard` and sign in with your Firebase Auth email/password
+2. Add participants by entering a participant ID (e.g., `P001`)
+3. Copy the personalized instrument links and send them to participants
+4. Monitor enrollment, consent, and check-in completion status
+5. Export participant data as CSV (long-format with demographics, calendar, and metrics)
 
 ---
 
-## Notes On Qualtrics Portability
+## Data Architecture
 
-The codebase is being kept portable to Qualtrics where practical:
+All participant data is stored in a Firestore collection called `participants`, with one document per participant keyed by their ID (e.g., `P001`). Each document contains:
 
-- survey instruments are separated by route
-- participant identity is passed via URL parameter
-- storage helpers are abstracted in `src/utils/storage.js`
-- the calendar interaction relies on standard DOM pointer events and CSS `touch-action`, not a React-only gesture library
+- **screener** — eligibility answers and completion timestamp
+- **contactInfo** — email and phone (PII, never included in CSV exports)
+- **consentGiven / consentGivenAt** — consent status
+- **providers** — array of care providers with name, type, and color
+- **entryAssessment** — demographics, affordability, effort, development, needs, cognition sections
+- **weeklyCheckins** — array of weekly check-ins, each with calendar data, survey answers, and computed metrics
+- **exitAssessment** — final assessment sections
 
-That should make a future Qualtrics port more straightforward, although additional work will still be needed.
+Researcher access is protected by Firebase Authentication (email/password). The dashboard login checks the user's credentials against Firebase Auth — there is no hardcoded password.
 
 ---
 
 ## Project Structure
 
-```text
+```
 src/
   components/
     calendar/       CalendarPainter, ProviderLegend
     layout/         Header, Footer, ProgressStepper
     survey/         SurveyQuestion
-  context/          AppContext
-  data/             questions.js
-  pages/            Welcome, Consent, EntryAssessment,
+  context/          AppContext (Firebase Auth state)
+  data/             questions.js (all survey question definitions)
+  pages/            Screener, Consent, EntryAssessment,
                     WeeklyCheckin, ExitAssessment,
                     Dashboard, ThankYou
   utils/
-    metrics.js      Multiplicity, instability, entropy
-    storage.js      localStorage-backed persistence and export helpers
+    metrics.js      Multiplicity, instability, entropy calculations
+    storage.js      Firestore-backed persistence and export helpers
+  firebase.js       Firebase app initialization
 ```
 
 ---
 
 ## Current Limitations
 
-- No backend, authentication service, or cloud persistence is connected
-- Several emotional and cognition measures are still placeholders
-- This prototype is not yet a Qualtrics implementation
-- The repository still contains some legacy/stub files from earlier iterations that are not part of the active route flow
+- Several emotional and cognition measures are still placeholders awaiting validated instruments
+- The app is not yet a Qualtrics implementation (but the route/pid structure is designed for portability)
+- Firestore security rules use open access on participant documents (acceptable for researcher-controlled PIDs in small studies)
+- No automated email/SMS reminders (use Qualtrics, Twilio, or Mailchimp for that)
 
 ---
 
