@@ -309,18 +309,25 @@ export async function exportParticipantCSV(pid) {
 // ── Week helpers (synchronous — no Firestore needed) ──────────────────────────
 
 export function getCurrentWeekId() {
+  // Returns the Sunday that starts the previous calendar week (Sun–Sat).
+  // If today is Sunday, "previous week" means the week that ended yesterday.
   const now    = new Date()
-  const day    = now.getDay()
-  const diff   = now.getDate() - day + (day === 0 ? -6 : 1)
-  const monday = new Date(now.setDate(diff))
-  return `week_${monday.toISOString().slice(0, 10)}`
+  const day    = now.getDay() // 0 = Sunday
+  const sunday = new Date(now)
+  sunday.setDate(now.getDate() - day - 7)
+  return `week_${sunday.toISOString().slice(0, 10)}`
 }
 
 export function getPast7Days() {
+  // Returns Sun–Sat of the previous calendar week.
+  const now    = new Date()
+  const day    = now.getDay()
+  const sunday = new Date(now)
+  sunday.setDate(now.getDate() - day - 7)
   const days = []
-  for (let i = 6; i >= 0; i--) {
-    const d = new Date()
-    d.setDate(d.getDate() - i)
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(sunday)
+    d.setDate(sunday.getDate() + i)
     days.push(d.toISOString().slice(0, 10))
   }
   return days

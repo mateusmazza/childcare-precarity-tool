@@ -1,0 +1,939 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_ZdBGHr5l90nFGI2",
+    "SurveyName": "Caremometer — Weekly Check-in",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_000000000000000",
+    "SurveyBrandID": "gse",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_N8hzu5cdm4EhYU1",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2026-04-01 22:54:14",
+    "CreatorID": "UR_000000000000000",
+    "LastModified": "2026-04-01 22:54:14",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "0000-00-00 00:00:00",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        {
+          "Type": "Default",
+          "SubType": "",
+          "Description": "Provider Changes & Calendar",
+          "ID": "BL_1dgaSTYAXKBVR",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID11"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID12"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID13"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Quick Survey",
+          "ID": "BL_0Bxk40ed2DRxG",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID1"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID2"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID4"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID5"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID6"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID7"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID8"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            }
+          ]
+        },
+        {
+          "Type": "Trash",
+          "Description": "Trash / Unused Questions",
+          "ID": "BL_i1VgTi80mtZwN"
+        }
+      ]
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "FlowID": "FL_1",
+        "Flow": [
+          {
+            "Type": "EmbeddedData",
+            "FlowID": "FL_2",
+            "EmbeddedData": [
+              {
+                "Description": "pid",
+                "Type": "Recipient",
+                "Field": "pid",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              }
+            ]
+          },
+          {
+            "ID": "BL_1dgaSTYAXKBVR",
+            "Type": "Block",
+            "FlowID": "FL_3"
+          },
+          {
+            "ID": "BL_0Bxk40ed2DRxG",
+            "Type": "Standard",
+            "FlowID": "FL_4"
+          }
+        ],
+        "Properties": {
+          "Count": 4
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID11",
+      "SecondaryAttribute": "Have there been any changes to your childcare providers since last week?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Have there been any changes to your childcare providers since last week?",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_changes",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have there been any changes to your childcare providers since last week?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID11"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "Weekly Calendar\nUse the calendar below to mark which provider cared for your child during each hour ",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<h3>Weekly Calendar</h3>\n<p>Use the calendar below to mark which provider cared for your child during each hour of the <strong>previous week (Sunday–Saturday)</strong>.</p>\n<p><strong>To use the interactive calendar:</strong> paste the JavaScript from <code>qualtrics/calendar-painter.js</code> into this question's JavaScript editor in Qualtrics. See the setup guide for details.</p>\n<p><em>If the interactive calendar is not available, describe your childcare schedule for each day of the past week in the text box below.</em></p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID12",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Weekly Calendar\nUse the calendar below to mark which provider cared for your child during each hour ",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID12"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID13",
+      "SecondaryAttribute": "Calendar data (JSON — filled automatically by the interactive calendar, or describe your schedule ma",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Calendar data (JSON — filled automatically by the interactive calendar, or describe your schedule manually)",
+        "DefaultChoices": false,
+        "DataExportTag": "calendar_data",
+        "QuestionType": "TE",
+        "Selector": "ML",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Calendar data (JSON — filled automatically by the interactive calendar, or describe your schedule ma",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID13"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "Did you get off from any waitlists this week?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did you get off from any waitlists this week?",
+        "DefaultChoices": false,
+        "DataExportTag": "waitlist_removed",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Did you get off from any waitlists this week?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID1"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "Was your exit caused by any of the following?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Was your exit caused by any of the following?",
+        "DefaultChoices": false,
+        "DataExportTag": "waitlist_removed_confounder",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Was your exit caused by any of the following?",
+        "Choices": {
+          "1": {
+            "Display": "New job or income change"
+          },
+          "2": {
+            "Display": "Got a raise"
+          },
+          "3": {
+            "Display": "Moved / relocated"
+          },
+          "4": {
+            "Display": "None of the above"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID2",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "ChoiceLocator": "q://QID1/SelectableChoice/1",
+              "Description": "<span class=\"ConjDesc\">If</span> condition",
+              "LeftOperand": "q://QID1/SelectableChoice/1",
+              "LogicType": "Question",
+              "Operator": "Selected",
+              "QuestionID": "QID1",
+              "QuestionIDFromLocator": "QID1",
+              "QuestionIsInLoop": "no",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "Did you experience any unexpected disruption to your childcare this week?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did you experience any unexpected disruption to your childcare this week?",
+        "DefaultChoices": false,
+        "DataExportTag": "weekly_disruption",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Did you experience any unexpected disruption to your childcare this week?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID3"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "In the last week, how often have you felt nervous, anxious, or on edge?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the last week, how often have you felt nervous, anxious, or on edge?",
+        "DefaultChoices": false,
+        "DataExportTag": "GAD1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the last week, how often have you felt nervous, anxious, or on edge?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "2": {
+            "Display": "Several days"
+          },
+          "3": {
+            "Display": "More than half the days"
+          },
+          "4": {
+            "Display": "Nearly every day"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID4"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "In the last week, how often were you not able to stop or control worrying?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the last week, how often were you not able to stop or control worrying?",
+        "DefaultChoices": false,
+        "DataExportTag": "GAD2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the last week, how often were you not able to stop or control worrying?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "2": {
+            "Display": "Several days"
+          },
+          "3": {
+            "Display": "More than half the days"
+          },
+          "4": {
+            "Display": "Nearly every day"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID5"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "In the last week, how often have you felt little interest or pleasure in doing things?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the last week, how often have you felt little interest or pleasure in doing things?",
+        "DefaultChoices": false,
+        "DataExportTag": "PHQ1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the last week, how often have you felt little interest or pleasure in doing things?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "2": {
+            "Display": "Several days"
+          },
+          "3": {
+            "Display": "More than half the days"
+          },
+          "4": {
+            "Display": "Nearly every day"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID6"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "In the last week, how often have you felt down, depressed, or hopeless?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the last week, how often have you felt down, depressed, or hopeless?",
+        "DefaultChoices": false,
+        "DataExportTag": "PHQ2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the last week, how often have you felt down, depressed, or hopeless?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "2": {
+            "Display": "Several days"
+          },
+          "3": {
+            "Display": "More than half the days"
+          },
+          "4": {
+            "Display": "Nearly every day"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID7"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "Stress means a situation in which a person feels tense, restless, nervous or anxious. Have you felt ",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Stress means a situation in which a person feels tense, restless, nervous or anxious. Have you felt this kind of stress in the last week?",
+        "DefaultChoices": false,
+        "DataExportTag": "STRESS1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Stress means a situation in which a person feels tense, restless, nervous or anxious. Have you felt ",
+        "Choices": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Always"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID8"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "In the past week, has your child been fearful or anxious?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the past week, has your child been fearful or anxious?",
+        "DefaultChoices": false,
+        "DataExportTag": "internalizing",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the past week, has your child been fearful or anxious?",
+        "Choices": {
+          "1": {
+            "Display": "Not true"
+          },
+          "2": {
+            "Display": "Somewhat / Sometimes true"
+          },
+          "3": {
+            "Display": "Often true / Very true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID9"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "In the past week, has your child been fussy or defiant?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the past week, has your child been fussy or defiant?",
+        "DefaultChoices": false,
+        "DataExportTag": "externalizing",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the past week, has your child been fussy or defiant?",
+        "Choices": {
+          "1": {
+            "Display": "Not true"
+          },
+          "2": {
+            "Display": "Somewhat / Sometimes true"
+          },
+          "3": {
+            "Display": "Often true / Very true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID10"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "true",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "Text",
+        "PartialData": "+1 week",
+        "ValidationMessage": "",
+        "PreviousButton": " ← Back",
+        "NextButton": "Continue →",
+        "SurveyTitle": "Caremometer — Weekly Check-in",
+        "SkinLibrary": "gse",
+        "SkinType": "templated",
+        "Skin": {
+          "templateId": "*base",
+          "overrides": null
+        },
+        "NewScoring": 1,
+        "ProtectSelectionIds": true
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "SCO",
+      "PrimaryAttribute": "Scoring",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ScoringCategories": [],
+        "ScoringCategoryGroups": [],
+        "ScoringSummaryCategory": null,
+        "ScoringSummaryAfterQuestions": 0,
+        "ScoringSummaryAfterSurvey": 0,
+        "DefaultScoringCategory": null,
+        "AutoScoringCategory": null
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": "1.1.0",
+      "Payload": {
+        "ProjectCategory": "CORE",
+        "SchemaVersion": "1.1.0"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "QC",
+      "PrimaryAttribute": "Survey Question Count",
+      "SecondaryAttribute": "13",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_N8hzu5cdm4EhYU1",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "STAT",
+      "PrimaryAttribute": "Survey Statistics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MobileCompatible": true,
+        "ID": "Survey Statistics"
+      }
+    },
+    {
+      "SurveyID": "SV_ZdBGHr5l90nFGI2",
+      "Element": "PL",
+      "PrimaryAttribute": "Preview Link",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "PreviewType": "Brand",
+        "PreviewID": "A9KMIMg4fBitsmA5WsFzpHxSqLFTJ6BgSyw7"
+      }
+    }
+  ]
+}

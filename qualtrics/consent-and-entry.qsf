@@ -1,0 +1,3560 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_JvorPTDoF01t8xB",
+    "SurveyName": "Caremometer — Consent & Entry Assessment",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_000000000000000",
+    "SurveyBrandID": "gse",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_S4NsuG1ztzKQRA3",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2026-04-01 22:54:14",
+    "CreatorID": "UR_000000000000000",
+    "LastModified": "2026-04-01 22:54:14",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "0000-00-00 00:00:00",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        {
+          "Type": "Default",
+          "SubType": "",
+          "Description": "Informed Consent",
+          "ID": "BL_ujmZRqEDMf8yG",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID22"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID1"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Demographics",
+          "ID": "BL_2EacR8hScXo6d",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID23"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID2"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID3"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID4"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID5"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID6"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID7"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID8"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID9"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID10"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID11"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID12"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID13"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID14"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID15"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID16"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID17"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Your Providers",
+          "ID": "BL_fqR2aJ9HNtc7P",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID24"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID25"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID26"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID27"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID28"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID29"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID30"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID31"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID32"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID33"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID34"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID35"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID36"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Affordability",
+          "ID": "BL_cDHJuUH4Pod2P",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID18"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID19"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID20"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID21"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Access & Effort",
+          "ID": "BL_JRknuOe0FSNoE",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID37"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID38"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID39"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID40"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID41"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Child Development",
+          "ID": "BL_VTHA00SIjcXnh",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID42"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID43"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID44"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID45"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID46"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID47"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Meets Your Needs",
+          "ID": "BL_gUz67k6SKlnsn",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID48"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID49"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID50"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID51"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Parent Cognition (Placeholder)",
+          "ID": "BL_54JpzkNbWmtNu",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID52"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID53"
+            }
+          ]
+        },
+        {
+          "Type": "Standard",
+          "SubType": "",
+          "Description": "Child Cognition (Placeholder)",
+          "ID": "BL_OCUDpdh6j5cF1",
+          "BlockElements": [
+            {
+              "Type": "Question",
+              "QuestionID": "QID54"
+            },
+            {
+              "Type": "Page Break"
+            },
+            {
+              "Type": "Question",
+              "QuestionID": "QID55"
+            }
+          ]
+        },
+        {
+          "Type": "Trash",
+          "Description": "Trash / Unused Questions",
+          "ID": "BL_2KfspM7NoGosm"
+        }
+      ]
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "FlowID": "FL_1",
+        "Flow": [
+          {
+            "Type": "EmbeddedData",
+            "FlowID": "FL_2",
+            "EmbeddedData": [
+              {
+                "Description": "pid",
+                "Type": "Recipient",
+                "Field": "pid",
+                "VariableType": "String",
+                "DataVisibility": [],
+                "AnalyzeText": false,
+                "Value": ""
+              }
+            ]
+          },
+          {
+            "ID": "BL_ujmZRqEDMf8yG",
+            "Type": "Block",
+            "FlowID": "FL_3"
+          },
+          {
+            "ID": "BL_2EacR8hScXo6d",
+            "Type": "Standard",
+            "FlowID": "FL_4"
+          },
+          {
+            "ID": "BL_fqR2aJ9HNtc7P",
+            "Type": "Standard",
+            "FlowID": "FL_5"
+          },
+          {
+            "ID": "BL_cDHJuUH4Pod2P",
+            "Type": "Standard",
+            "FlowID": "FL_6"
+          },
+          {
+            "ID": "BL_JRknuOe0FSNoE",
+            "Type": "Standard",
+            "FlowID": "FL_7"
+          },
+          {
+            "ID": "BL_VTHA00SIjcXnh",
+            "Type": "Standard",
+            "FlowID": "FL_8"
+          },
+          {
+            "ID": "BL_gUz67k6SKlnsn",
+            "Type": "Standard",
+            "FlowID": "FL_9"
+          },
+          {
+            "ID": "BL_54JpzkNbWmtNu",
+            "Type": "Standard",
+            "FlowID": "FL_10"
+          },
+          {
+            "ID": "BL_OCUDpdh6j5cF1",
+            "Type": "Standard",
+            "FlowID": "FL_11"
+          }
+        ],
+        "Properties": {
+          "Count": 11
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID22",
+      "SecondaryAttribute": "Consent to Participate in Research\nStudy title: Caremometer — Measuring Childcare Precarity\nPrincipa",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<h2>Consent to Participate in Research</h2>\n<p><strong>Study title:</strong> Caremometer — Measuring Childcare Precarity<br>\n<strong>Principal Investigator:</strong> Philip Fisher, Ph.D., Stanford Graduate School of Education<br>\n<strong>Student Researcher:</strong> Mateus Mazzaferro, Stanford Graduate School of Education<br>\n<strong>Contact:</strong> mmmazzaferro@gmail.com</p>\n\n<h3>Purpose</h3>\n<p>We are studying childcare precarity — the degree to which families struggle to find, afford, and maintain reliable childcare.</p>\n\n<h3>What participation involves</h3>\n<ul>\n<li><strong>Enrollment survey (~30 min)</strong> — questions about you, your child(ren), and your childcare arrangements.</li>\n<li><strong>Weekly check-ins (~5 min each)</strong> — a short calendar-based log of your childcare schedule.</li>\n<li><strong>Exit survey (~30 min)</strong> — a final set of questions at the end of the study period.</li>\n</ul>\n\n<h3>Risks</h3>\n<p>Minimal risk. Some questions ask about income, childcare costs, and family stress. You may skip any question you prefer not to answer.</p>\n\n<h3>Benefits</h3>\n<p>No direct benefit. Your responses will contribute to research that may improve childcare policy.</p>\n\n<h3>Confidentiality</h3>\n<p>Your responses will be de-identified before any analysis. Contact information is stored separately and never appears in research data exports.</p>\n\n<h3>Voluntary participation</h3>\n<p>Participation is entirely voluntary. You may withdraw at any time without penalty.</p>\n\n<h3>Questions or concerns</h3>\n<p>Research team: mmmazzaferro@gmail.com<br>\nStanford IRB: irb2-manager@stanford.edu or (650) 723-2480</p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID22",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Consent to Participate in Research\nStudy title: Caremometer — Measuring Childcare Precarity\nPrincipa",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID22"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "I have read and understood the information above. I am 18 years of age or older, and I voluntarily a",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "I have read and understood the information above. I am 18 years of age or older, and I voluntarily agree to participate in this research study.",
+        "DefaultChoices": false,
+        "DataExportTag": "consent",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "I have read and understood the information above. I am 18 years of age or older, and I voluntarily a",
+        "Choices": {
+          "1": {
+            "Display": "I agree to participate"
+          }
+        },
+        "ChoiceOrder": [
+          1
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 2,
+        "NextAnswerId": 1,
+        "QuestionID": "QID1"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID23",
+      "SecondaryAttribute": "All questions are optional unless marked as required. You may skip any question you prefer not to an",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p>All questions are optional unless marked as required. You may skip any question you prefer not to answer.</p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID23",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "All questions are optional unless marked as required. You may skip any question you prefer not to an",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID23"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "What is your relationship to the child?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your relationship to the child?",
+        "DefaultChoices": false,
+        "DataExportTag": "relationship_to_child",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your relationship to the child?",
+        "Choices": {
+          "1": {
+            "Display": "Biological mother"
+          },
+          "2": {
+            "Display": "Biological father"
+          },
+          "3": {
+            "Display": "Adoptive mother"
+          },
+          "4": {
+            "Display": "Adoptive father"
+          },
+          "5": {
+            "Display": "Stepmother"
+          },
+          "6": {
+            "Display": "Stepfather"
+          },
+          "7": {
+            "Display": "Grandparent"
+          },
+          "8": {
+            "Display": "Foster parent"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID2"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "What is your child's date of birth?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your child's date of birth?",
+        "DefaultChoices": false,
+        "DataExportTag": "child_dob",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your child's date of birth?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID3"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "What is your child's gender?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your child's gender?",
+        "DefaultChoices": false,
+        "DataExportTag": "child_gender",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your child's gender?",
+        "Choices": {
+          "1": {
+            "Display": "Male"
+          },
+          "2": {
+            "Display": "Female"
+          },
+          "3": {
+            "Display": "Non-binary"
+          },
+          "4": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID4"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "How old are you?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How old are you?",
+        "DefaultChoices": false,
+        "DataExportTag": "parent_age",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How old are you?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "ValidNumber",
+            "ContentType": "ValidNumber"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID5"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "What is your race/ethnicity? (Select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your race/ethnicity? (Select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "race_ethnicity",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your race/ethnicity? (Select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "White"
+          },
+          "2": {
+            "Display": "Black or African American"
+          },
+          "3": {
+            "Display": "Hispanic or Latino"
+          },
+          "4": {
+            "Display": "Asian"
+          },
+          "5": {
+            "Display": "American Indian / Alaska Native"
+          },
+          "6": {
+            "Display": "Native Hawaiian / Pacific Islander"
+          },
+          "7": {
+            "Display": "Multiracial"
+          },
+          "8": {
+            "Display": "Other"
+          },
+          "9": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID6"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "What is your total household annual income?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your total household annual income?",
+        "DefaultChoices": false,
+        "DataExportTag": "household_income",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your total household annual income?",
+        "Choices": {
+          "1": {
+            "Display": "Under $25,000"
+          },
+          "2": {
+            "Display": "$25,000 – $49,999"
+          },
+          "3": {
+            "Display": "$50,000 – $74,999"
+          },
+          "4": {
+            "Display": "$75,000 – $99,999"
+          },
+          "5": {
+            "Display": "$100,000 – $149,999"
+          },
+          "6": {
+            "Display": "$150,000 or more"
+          },
+          "7": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID7"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "How many people live in your household?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many people live in your household?",
+        "DefaultChoices": false,
+        "DataExportTag": "household_size",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How many people live in your household?",
+        "Choices": {
+          "1": {
+            "Display": "1"
+          },
+          "2": {
+            "Display": "2"
+          },
+          "3": {
+            "Display": "3"
+          },
+          "4": {
+            "Display": "4"
+          },
+          "5": {
+            "Display": "5"
+          },
+          "6": {
+            "Display": "6"
+          },
+          "7": {
+            "Display": "7"
+          },
+          "8": {
+            "Display": "8 or more"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionID": "QID8"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "Which best describes your household?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which best describes your household?",
+        "DefaultChoices": false,
+        "DataExportTag": "household_structure",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Which best describes your household?",
+        "Choices": {
+          "1": {
+            "Display": "Two-parent household"
+          },
+          "2": {
+            "Display": "Single-parent household"
+          },
+          "3": {
+            "Display": "Grandparent-led household"
+          },
+          "4": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionID": "QID9"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "What language(s) do you speak at home? (Select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What language(s) do you speak at home? (Select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "languages",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What language(s) do you speak at home? (Select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "English"
+          },
+          "2": {
+            "Display": "Spanish"
+          },
+          "3": {
+            "Display": "Mandarin"
+          },
+          "4": {
+            "Display": "Cantonese"
+          },
+          "5": {
+            "Display": "Vietnamese"
+          },
+          "6": {
+            "Display": "Tagalog"
+          },
+          "7": {
+            "Display": "Korean"
+          },
+          "8": {
+            "Display": "Arabic"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID10"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID11",
+      "SecondaryAttribute": "Which best describes where you live?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which best describes where you live?",
+        "DefaultChoices": false,
+        "DataExportTag": "urbanicity",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Which best describes where you live?",
+        "Choices": {
+          "1": {
+            "Display": "Urban"
+          },
+          "2": {
+            "Display": "Suburban"
+          },
+          "3": {
+            "Display": "Rural"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID11"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "What is your zip code?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your zip code?",
+        "DefaultChoices": false,
+        "DataExportTag": "zip_code",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is your zip code?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID12"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID13",
+      "SecondaryAttribute": "Which best describes your current employment status?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which best describes your current employment status?",
+        "DefaultChoices": false,
+        "DataExportTag": "employment_status",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Which best describes your current employment status?",
+        "Choices": {
+          "1": {
+            "Display": "Employed full-time"
+          },
+          "2": {
+            "Display": "Employed part-time"
+          },
+          "3": {
+            "Display": "Full-time student"
+          },
+          "4": {
+            "Display": "Part-time student"
+          },
+          "5": {
+            "Display": "Working and studying"
+          },
+          "6": {
+            "Display": "Furloughed / on leave"
+          },
+          "7": {
+            "Display": "Unemployed"
+          },
+          "8": {
+            "Display": "Retired"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID13"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID14",
+      "SecondaryAttribute": "In the past year, have you experienced housing instability?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the past year, have you experienced housing instability?",
+        "DefaultChoices": false,
+        "DataExportTag": "housing_stability",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "In the past year, have you experienced housing instability?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID14"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID15",
+      "SecondaryAttribute": "Do you currently receive any government assistance? (Select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Do you currently receive any government assistance? (Select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "welfare_involvement",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Do you currently receive any government assistance? (Select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "SNAP (food stamps)"
+          },
+          "2": {
+            "Display": "WIC"
+          },
+          "3": {
+            "Display": "Medicaid"
+          },
+          "4": {
+            "Display": "TANF"
+          },
+          "5": {
+            "Display": "Housing assistance"
+          },
+          "6": {
+            "Display": "None"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID15"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID16",
+      "SecondaryAttribute": "Are you currently on any childcare waitlists?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Are you currently on any childcare waitlists?",
+        "DefaultChoices": false,
+        "DataExportTag": "waitlist_status",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Are you currently on any childcare waitlists?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID16"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID17",
+      "SecondaryAttribute": "How many childcare waitlists are you currently on?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many childcare waitlists are you currently on?",
+        "DefaultChoices": false,
+        "DataExportTag": "waitlist_count",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How many childcare waitlists are you currently on?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "ValidNumber",
+            "ContentType": "ValidNumber"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID17",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "ChoiceLocator": "q://QID16/SelectableChoice/1",
+              "Description": "<span class=\"ConjDesc\">If</span> condition",
+              "LeftOperand": "q://QID16/SelectableChoice/1",
+              "LogicType": "Question",
+              "Operator": "Selected",
+              "QuestionID": "QID16",
+              "QuestionIDFromLocator": "QID16",
+              "QuestionIsInLoop": "no",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID24",
+      "SecondaryAttribute": "Your Childcare ProvidersList up to 6 people or programs who regularly care for your child. Include y",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<h3>Your Childcare Providers</h3><p>List up to 6 people or programs who regularly care for your child. Include yourself if applicable. You will use these to fill in the weekly calendar later.</p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID24",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Your Childcare ProvidersList up to 6 people or programs who regularly care for your child. Include y",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID24"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID25",
+      "SecondaryAttribute": "Provider 1 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 1 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_1_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 1 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID25"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID26",
+      "SecondaryAttribute": "Provider 1 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 1 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_1_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 1 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID26"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID27",
+      "SecondaryAttribute": "Provider 2 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 2 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_2_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 2 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID27"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID28",
+      "SecondaryAttribute": "Provider 2 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 2 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_2_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 2 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID28"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID29",
+      "SecondaryAttribute": "Provider 3 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 3 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_3_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 3 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID29"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID30",
+      "SecondaryAttribute": "Provider 3 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 3 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_3_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 3 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID30"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID31",
+      "SecondaryAttribute": "Provider 4 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 4 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_4_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 4 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID31"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID32",
+      "SecondaryAttribute": "Provider 4 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 4 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_4_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 4 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID32"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID33",
+      "SecondaryAttribute": "Provider 5 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 5 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_5_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 5 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID33"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID34",
+      "SecondaryAttribute": "Provider 5 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 5 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_5_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 5 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID34"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID35",
+      "SecondaryAttribute": "Provider 6 — Name or label (e.g., Sunshine Daycare, Grandma)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 6 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_6_name",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 6 — Name or label (e.g., Sunshine Daycare, Grandma)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID35"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID36",
+      "SecondaryAttribute": "Provider 6 — Type of care",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Provider 6 — Type of care",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_6_type",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Provider 6 — Type of care",
+        "Choices": {
+          "1": {
+            "Display": "Childcare center / daycare"
+          },
+          "2": {
+            "Display": "Family childcare home (licensed)"
+          },
+          "3": {
+            "Display": "Relative / grandparent"
+          },
+          "4": {
+            "Display": "Nanny or babysitter"
+          },
+          "5": {
+            "Display": "Family friend or neighbor"
+          },
+          "6": {
+            "Display": "Head Start / Early Head Start"
+          },
+          "7": {
+            "Display": "School-based program"
+          },
+          "8": {
+            "Display": "Parent / self-care"
+          },
+          "9": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 10,
+        "NextAnswerId": 1,
+        "QuestionID": "QID36"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID18",
+      "SecondaryAttribute": "How much do you pay per month for childcare in total?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How much do you pay per month for childcare in total?",
+        "DefaultChoices": false,
+        "DataExportTag": "monthly_childcare_cost",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How much do you pay per month for childcare in total?",
+        "Choices": {
+          "1": {
+            "Display": "$0 (no cost)"
+          },
+          "2": {
+            "Display": "$1 – $200"
+          },
+          "3": {
+            "Display": "$201 – $500"
+          },
+          "4": {
+            "Display": "$501 – $1,000"
+          },
+          "5": {
+            "Display": "$1,001 – $1,500"
+          },
+          "6": {
+            "Display": "$1,501 – $2,000"
+          },
+          "7": {
+            "Display": "Over $2,000"
+          },
+          "8": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionID": "QID18"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID19",
+      "SecondaryAttribute": "Roughly what percentage of your household income goes toward childcare?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Roughly what percentage of your household income goes toward childcare?",
+        "DefaultChoices": false,
+        "DataExportTag": "income_percent_childcare",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Roughly what percentage of your household income goes toward childcare?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "ValidNumber",
+            "ContentType": "ValidNumber"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID19"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID20",
+      "SecondaryAttribute": "Do you receive any childcare subsidy or financial assistance?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Do you receive any childcare subsidy or financial assistance?",
+        "DefaultChoices": false,
+        "DataExportTag": "subsidy_receipt",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Do you receive any childcare subsidy or financial assistance?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Applied but not yet receiving"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID20"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID21",
+      "SecondaryAttribute": "What type of childcare subsidy or assistance do you receive? (Select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What type of childcare subsidy or assistance do you receive? (Select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "subsidy_type",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What type of childcare subsidy or assistance do you receive? (Select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "CCDF / Child Care Subsidy"
+          },
+          "2": {
+            "Display": "Head Start"
+          },
+          "3": {
+            "Display": "Employer benefit"
+          },
+          "4": {
+            "Display": "State pre-K"
+          },
+          "5": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID21",
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "ChoiceLocator": "q://QID20/SelectableChoice/1",
+              "Description": "<span class=\"ConjDesc\">If</span> condition",
+              "LeftOperand": "q://QID20/SelectableChoice/1",
+              "LogicType": "Question",
+              "Operator": "Selected",
+              "QuestionID": "QID20",
+              "QuestionIDFromLocator": "QID20",
+              "QuestionIsInLoop": "no",
+              "Type": "Expression"
+            },
+            "Type": "If"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID37",
+      "SecondaryAttribute": "How long does it take to travel to your main childcare provider (one way, in minutes)?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How long does it take to travel to your main childcare provider (one way, in minutes)?",
+        "DefaultChoices": false,
+        "DataExportTag": "commute_to_provider",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How long does it take to travel to your main childcare provider (one way, in minutes)?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "ValidNumber",
+            "ContentType": "ValidNumber"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID37"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID38",
+      "SecondaryAttribute": "How do you usually get to childcare? (Select all that apply)",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How do you usually get to childcare? (Select all that apply)",
+        "DefaultChoices": false,
+        "DataExportTag": "transportation_mode",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How do you usually get to childcare? (Select all that apply)",
+        "Choices": {
+          "1": {
+            "Display": "Walk"
+          },
+          "2": {
+            "Display": "Public transit"
+          },
+          "3": {
+            "Display": "Personal car"
+          },
+          "4": {
+            "Display": "Rideshare"
+          },
+          "5": {
+            "Display": "Carpool"
+          },
+          "6": {
+            "Display": "Bike"
+          },
+          "7": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID38"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID39",
+      "SecondaryAttribute": "Have you had any difficulty finding space in a home- or center-based child care program?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Have you had any difficulty finding space in a home- or center-based child care program?",
+        "DefaultChoices": false,
+        "DataExportTag": "difficulty_finding",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Have you had any difficulty finding space in a home- or center-based child care program?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all difficult"
+          },
+          "2": {
+            "Display": "Slightly difficult"
+          },
+          "3": {
+            "Display": "Moderately difficult"
+          },
+          "4": {
+            "Display": "Very difficult"
+          },
+          "5": {
+            "Display": "Extremely difficult"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID39"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID40",
+      "SecondaryAttribute": "How long did you search before finding your current main childcare arrangement?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How long did you search before finding your current main childcare arrangement?",
+        "DefaultChoices": false,
+        "DataExportTag": "search_duration",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "How long did you search before finding your current main childcare arrangement?",
+        "Choices": {
+          "1": {
+            "Display": "Still searching"
+          },
+          "2": {
+            "Display": "Less than 1 month"
+          },
+          "3": {
+            "Display": "1–3 months"
+          },
+          "4": {
+            "Display": "3–6 months"
+          },
+          "5": {
+            "Display": "6–12 months"
+          },
+          "6": {
+            "Display": "Over 1 year"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionID": "QID40"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID41",
+      "SecondaryAttribute": "Are you currently looking for child care?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Are you currently looking for child care?",
+        "DefaultChoices": false,
+        "DataExportTag": "search_current",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Are you currently looking for child care?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID41"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID42",
+      "SecondaryAttribute": "The following questions ask about your main childcare provider. If you use Qualtrics Loop &amp; Merg",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p>The following questions ask about your <strong>main</strong> childcare provider. If you use Qualtrics Loop &amp; Merge, you can repeat this block per provider.</p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID42",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "The following questions ask about your main childcare provider. If you use Qualtrics Loop &amp; Merg",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID42"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID43",
+      "SecondaryAttribute": "Is this provider accredited?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Is this provider accredited?",
+        "DefaultChoices": false,
+        "DataExportTag": "accredited",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Is this provider accredited?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Don't know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID43"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID44",
+      "SecondaryAttribute": "What is the highest level of education of the main caregiver?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is the highest level of education of the main caregiver?",
+        "DefaultChoices": false,
+        "DataExportTag": "provider_education",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "What is the highest level of education of the main caregiver?",
+        "Choices": {
+          "1": {
+            "Display": "No degree"
+          },
+          "2": {
+            "Display": "High school"
+          },
+          "3": {
+            "Display": "Some college"
+          },
+          "4": {
+            "Display": "Associate degree"
+          },
+          "5": {
+            "Display": "Bachelor's degree"
+          },
+          "6": {
+            "Display": "Graduate degree"
+          },
+          "7": {
+            "Display": "Don't know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionID": "QID44"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID45",
+      "SecondaryAttribute": "Is this a Head Start or Early Head Start program?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Is this a Head Start or Early Head Start program?",
+        "DefaultChoices": false,
+        "DataExportTag": "head_start",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Is this a Head Start or Early Head Start program?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID45"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID46",
+      "SecondaryAttribute": "Is this care school-based?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Is this care school-based?",
+        "DefaultChoices": false,
+        "DataExportTag": "school_based",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Is this care school-based?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionID": "QID46"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID47",
+      "SecondaryAttribute": "Does this provider speak your home language?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Does this provider speak your home language?",
+        "DefaultChoices": false,
+        "DataExportTag": "language_match",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Does this provider speak your home language?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "Partially"
+          },
+          "3": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID47"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID48",
+      "SecondaryAttribute": "My current childcare arrangement is my preferred type of care.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "My current childcare arrangement is my preferred type of care.",
+        "DefaultChoices": false,
+        "DataExportTag": "preferred_care",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "My current childcare arrangement is my preferred type of care.",
+        "Choices": {
+          "1": {
+            "Display": "Strongly Disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neither Agree nor Disagree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly Agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID48"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID49",
+      "SecondaryAttribute": "My current childcare arrangement matches my work/school schedule.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "My current childcare arrangement matches my work/school schedule.",
+        "DefaultChoices": false,
+        "DataExportTag": "schedule_fit",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "My current childcare arrangement matches my work/school schedule.",
+        "Choices": {
+          "1": {
+            "Display": "Strongly Disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neither Agree nor Disagree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly Agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID49"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID50",
+      "SecondaryAttribute": "My current childcare arrangement is flexible when my schedule unexpectedly changes.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "My current childcare arrangement is flexible when my schedule unexpectedly changes.",
+        "DefaultChoices": false,
+        "DataExportTag": "flexibility",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "My current childcare arrangement is flexible when my schedule unexpectedly changes.",
+        "Choices": {
+          "1": {
+            "Display": "Strongly Disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neither Agree nor Disagree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly Agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID50"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID51",
+      "SecondaryAttribute": "Recent difficulties with childcare have impacted my ability to work or study.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Recent difficulties with childcare have impacted my ability to work or study.",
+        "DefaultChoices": false,
+        "DataExportTag": "work_impact",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Recent difficulties with childcare have impacted my ability to work or study.",
+        "Choices": {
+          "1": {
+            "Display": "Strongly Disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Neither Agree nor Disagree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Strongly Agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID51"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID52",
+      "SecondaryAttribute": "Placeholder — to be replaced with a validated instrument.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><em>Placeholder — to be replaced with a validated instrument.</em></p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID52",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Placeholder — to be replaced with a validated instrument.",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID52"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID53",
+      "SecondaryAttribute": "[Placeholder — Parent Cognition] To be replaced with validated instrument.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "[Placeholder — Parent Cognition] To be replaced with validated instrument.",
+        "DefaultChoices": false,
+        "DataExportTag": "placeholder_parent_cognition_1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "[Placeholder — Parent Cognition] To be replaced with validated instrument.",
+        "Choices": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Always"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID53"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID54",
+      "SecondaryAttribute": "Placeholder — to be replaced with a validated instrument.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "<p><em>Placeholder — to be replaced with a validated instrument.</em></p>",
+        "DefaultChoices": false,
+        "DataExportTag": "QID54",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "Placeholder — to be replaced with a validated instrument.",
+        "ChoiceOrder": [],
+        "Validation": {
+          "Settings": {
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionID": "QID54"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID55",
+      "SecondaryAttribute": "[Placeholder — Child Cognition] To be replaced with validated instrument.",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "[Placeholder — Child Cognition] To be replaced with validated instrument.",
+        "DefaultChoices": false,
+        "DataExportTag": "placeholder_child_cognition_1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "[Placeholder — Child Cognition] To be replaced with validated instrument.",
+        "Choices": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Always"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "OFF",
+            "Type": "None"
+          }
+        },
+        "GradingData": [],
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionID": "QID55"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "true",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "Text",
+        "PartialData": "+1 week",
+        "ValidationMessage": "",
+        "PreviousButton": " ← Back",
+        "NextButton": "Continue →",
+        "SurveyTitle": "Caremometer — Consent & Entry Assessment",
+        "SkinLibrary": "gse",
+        "SkinType": "templated",
+        "Skin": {
+          "templateId": "*base",
+          "overrides": null
+        },
+        "NewScoring": 1,
+        "ProtectSelectionIds": true
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "SCO",
+      "PrimaryAttribute": "Scoring",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ScoringCategories": [],
+        "ScoringCategoryGroups": [],
+        "ScoringSummaryCategory": null,
+        "ScoringSummaryAfterQuestions": 0,
+        "ScoringSummaryAfterSurvey": 0,
+        "DefaultScoringCategory": null,
+        "AutoScoringCategory": null
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": "1.1.0",
+      "Payload": {
+        "ProjectCategory": "CORE",
+        "SchemaVersion": "1.1.0"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "QC",
+      "PrimaryAttribute": "Survey Question Count",
+      "SecondaryAttribute": "55",
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "RS",
+      "PrimaryAttribute": "RS_S4NsuG1ztzKQRA3",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": null
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "STAT",
+      "PrimaryAttribute": "Survey Statistics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "MobileCompatible": true,
+        "ID": "Survey Statistics"
+      }
+    },
+    {
+      "SurveyID": "SV_JvorPTDoF01t8xB",
+      "Element": "PL",
+      "PrimaryAttribute": "Preview Link",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "PreviewType": "Brand",
+        "PreviewID": "gzsuEJRM5PHnh10CgZ5l2wylMJgCJ9kFHLAe"
+      }
+    }
+  ]
+}
