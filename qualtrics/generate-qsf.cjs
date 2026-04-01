@@ -272,14 +272,16 @@ function buildSurvey(name, blockDefs) {
     ID: makeBlockID(),
   })
 
-  // BL element
+  // BL element — Payload must be an object with numeric string keys, not an array
+  const blocksObj = {}
+  blocks.forEach((b, i) => { blocksObj[String(i + 1)] = b })
   elements.push({
     SurveyID: surveyId,
     Element: 'BL',
     PrimaryAttribute: 'Survey Blocks',
     SecondaryAttribute: null,
     TertiaryAttribute: null,
-    Payload: blocks,
+    Payload: blocksObj,
   })
 
   // FL element — blocks in presentation order
@@ -287,13 +289,14 @@ function buildSurvey(name, blockDefs) {
   let flowCounter = 1
   const flowItems = []
 
-  // Block flow
+  // Block flow — all active blocks use Type "Standard" with Autofill array
   for (const block of blocks) {
     if (block.Type === 'Trash') continue
     flowItems.push({
+      Type: 'Standard',
       ID: block.ID,
-      Type: block.Type === 'Default' ? 'Block' : 'Standard',
       FlowID: `FL_${++flowCounter}`,
+      Autofill: [],
     })
   }
 
@@ -348,12 +351,13 @@ function buildSurvey(name, blockDefs) {
       ValidationMessage: '',
       PreviousButton: ' ← Back',
       NextButton: 'Continue →',
-      SurveyTitle: `Caremometer — ${name}`,
+      SurveyTitle: 'Qualtrics Survey | Qualtrics Experience Management',
       SkinLibrary: 'gse',
       SkinType: 'templated',
-      Skin: { brandingId: null, templateId: '*base', overrides: null },
+      Skin: { brandingId: '73341743', templateId: '*base', overrides: null },
       NewScoring: 1,
-      SurveyMetaDescription: `Caremometer — ${name}`,
+      SurveyMetaDescription: 'The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.',
+      SurveyName: `Caremometer — ${name}`,
       ProtectSelectionIds: true,
     },
   })
@@ -389,6 +393,20 @@ function buildSurvey(name, blockDefs) {
     SurveyID: surveyId, Element: 'PL',
     PrimaryAttribute: 'Preview Link', SecondaryAttribute: null, TertiaryAttribute: null,
     Payload: { PreviewType: 'Brand', PreviewID: randomAlpha(36) },
+  })
+
+  // QG + QGO — Quota Groups (required by Qualtrics import)
+  const qgId = `QG_${randomAlpha(15)}`
+  elements.push({
+    SurveyID: surveyId, Element: 'QG',
+    PrimaryAttribute: qgId, SecondaryAttribute: 'Default Quota Group', TertiaryAttribute: null,
+    Payload: { ID: qgId, Name: 'Default Quota Group', Selected: true,
+      MultipleMatch: 'PlaceInAll', Public: false, Quotas: [] },
+  })
+  elements.push({
+    SurveyID: surveyId, Element: 'QGO',
+    PrimaryAttribute: 'QGO_QuotaGroupOrder', SecondaryAttribute: null, TertiaryAttribute: null,
+    Payload: [qgId],
   })
 
   return {
